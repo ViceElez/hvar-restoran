@@ -142,7 +142,7 @@ export default function Contact() {
           alignItems: 'stretch',
         }}
       >
-        {[{ src: '/images/home/img.png', alt: 'Restaurant view' }, { src: '/images/home/img_1.png', alt: 'Restaurant atmosphere' }].map(
+        {[{ src: '/images/home/img.png', alt: 'Restaurant view' }, { src: '/images/home/11.png', alt: 'Restaurant atmosphere' }].map(
           (img) => (
             <div
               key={img.src}
