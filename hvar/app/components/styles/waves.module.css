@@ -1,0 +1,42 @@
+.waves {
+    lineHeight: 0;
+    margin-top: -150px;
+    position: relative;
+    z-index: 10;
+}
+
+.wavesSvg {
+    display: block;
+    width: 100%;
+    height: 160px;
+}
+
+@media (max-width: 1300px) {
+    .waves {
+        margin-top: -170px;
+    }
+
+    .wavesSvg {
+        height: 200px;
+    }
+}
+
+@media (max-width: 1150px) {
+    .waves {
+        margin-top: -100px;
+    }
+
+    .wavesSvg {
+        height: 110px;
+    }
+}
+
+@media (max-width: 900px) {
+    .waves {
+        margin-top: -180px;
+    }
+
+    .wavesSvg {
+        height: 200px;
+    }
+}

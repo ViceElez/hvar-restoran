@@ -6,15 +6,16 @@
     width: 100%;
     max-width: 1200px;
     margin: 0 auto;
-    padding: clamp(40px, 6vw, 80px) clamp(24px, 5vw, 80px);
+    padding: clamp(40px, 6vw, 80px) clamp(22px, 5vw, 80px);
     display: flex;
     justify-content: space-between;
-    gap: 40px;
+    gap: 32px;
 }
 
 .col {
     display: flex;
     flex-direction: column;
+    min-width: 200px;
 }
 
 .heading {
@@ -63,8 +64,60 @@
     color: #f15a24;
 }
 
+@media (max-width: 1100px) {
+    .content {
+        padding: clamp(40px, 6vw, 80px) clamp(22px, 3vw, 40px);
+    }
+}
+
+@media (max-width: 900px) {
+    .content {
+        padding: clamp(40px, 6vw, 80px) 22px;
+    }
+}
+
 @media (max-width: 700px) {
     .content {
         flex-direction: column;
+        gap: 36px;
+        padding: clamp(40px, 6vw, 80px) clamp(16px, 5vw, 40px);
+    }
+
+    .col:last-child {
+        margin-left: 0;
+    }
+
+    .heading {
+        font-size: 14px;
+        margin-bottom: 16px;
+    }
+
+    .text {
+        font-size: 17px;
+        line-height: 1.9;
+    }
+
+    .socials {
+        margin-top: 18px;
+    }
+
+    .mapLink {
+        margin-top: 18px;
+    }
+}
+
+@media (max-width: 420px) {
+    .content {
+        padding: 56px 22px;
+        gap: 36px;
+    }
+
+    .heading {
+        font-size: 13px;
+        letter-spacing: 0.18em;
+    }
+
+    .text {
+        font-size: 16px;
     }
 }

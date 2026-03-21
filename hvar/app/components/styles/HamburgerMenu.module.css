@@ -261,6 +261,44 @@
   flex: 0 0 auto;
 }
 
+@media (max-width: 900px) {
+  .link,
+  .dropdownLabelBtn {
+    font-size: 40px;
+  }
+}
+
+
+@media (max-width: 500px) {
+  .panel {
+    width: 100vw;
+  }
+
+  .nav {
+    padding-left: 22px;
+  }
+
+  .dropdown {
+    padding-left: 22px;
+  }
+
+  .dropdownOpen {
+    padding-left: 22px;
+  }
+
+}
+
+@media (max-width: 400px) {
+  .link,
+  .dropdownLabelBtn {
+    font-size: 35px;
+  }
+
+  .smallLink {
+    font-size: 15px;
+  }
+}
+
 @media (prefers-reduced-motion: reduce) {
   .panel,
   .backdrop,

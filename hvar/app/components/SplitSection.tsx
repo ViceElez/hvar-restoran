@@ -52,7 +52,7 @@ export default function SplitSection() {
                         specialties, always-fresh fish and seafood, and some of the special, but sometimes also
                         very rare bottles of wine that the wine cellar of this restaurant can be proud of.
                     </p>
-                    <Link href="/" className={styles.cta}>DISCOVER MORE</Link>
+                    <Link href="/menu" className={styles.cta}>DISCOVER MORE</Link>
                 </div>
             </div>
 

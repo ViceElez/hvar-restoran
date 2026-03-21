@@ -34,3 +34,29 @@
     line-height: 1.9;
     color: rgba(11, 47, 68, 0.9);
 }
+
+@media (max-width: 900px) {
+    .title {
+        font-size: clamp(38px, 7vw, 72px);
+    }
+
+    .text {
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 600px) {
+    .kicker {
+        font-size: 13px;
+    }
+
+    .title {
+        font-size: clamp(30px, 9vw, 52px);
+        margin-bottom: 22px;
+    }
+
+    .text {
+        font-size: 16px;
+        line-height: 1.75;
+    }
+}
