@@ -1,0 +1,212 @@
+.page {
+    background: #fff;
+}
+
+.main {
+    background: #fff;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+/* ── Shared ── */
+.kicker {
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 0.18em;
+    color: #0b2f44;
+    margin: 0 0 16px;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.titleLarge {
+    font-family: ui-serif, Georgia, "Times New Roman", Times, serif;
+    font-size: clamp(36px, 5vw, 72px);
+    font-weight: 400;
+    color: #0b2f44;
+    letter-spacing: 0.04em;
+    margin: 0 0 16px;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.divider {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    margin: 0 0 48px;
+}
+
+.divider::before,
+.divider::after {
+    content: '';
+    display: block;
+    width: 80px;
+    height: 1px;
+    background: rgba(11, 47, 68, 0.25);
+}
+
+.dividerIcon {
+    font-size: 12px;
+    color: #c8a96e;
+}
+
+/* ── Wines by Glass ── */
+.byGlass {
+    padding: clamp(60px, 8vw, 100px) clamp(24px, 6vw, 100px);
+    border-bottom: 1px solid rgba(11, 47, 68, 0.08);
+}
+
+.byGlassHeader {
+    margin-bottom: 48px;
+}
+
+.byGlassBody {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: clamp(40px, 6vw, 100px);
+    align-items: start;
+}
+
+.byGlassImage {
+    position: relative;
+    height: clamp(400px, 50vw, 600px);
+    border-radius: 4px;
+    overflow: hidden;
+}
+
+.byGlassCategories {
+    display: flex;
+    flex-direction: column;
+    gap: 48px;
+    padding-top: 24px;
+}
+
+.byGlassCategory {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.categoryName {
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 0.16em;
+    color: #0b2f44;
+    text-transform: uppercase;
+    margin: 0 0 8px;
+}
+
+.byGlassItem {
+    font-family: ui-serif, Georgia, "Times New Roman", Times, serif;
+    font-size: clamp(18px, 1.8vw, 22px);
+    color: #0b2f44;
+    margin: 0;
+    line-height: 1.6;
+}
+
+/* ── Wine Categories (White, Rose, Red) ── */
+.category {
+    border-bottom: 1px solid rgba(11, 47, 68, 0.08);
+}
+
+.categoryBody {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    min-height: clamp(500px, 60vh, 700px);
+}
+
+.imageRight {
+    direction: ltr;
+}
+
+.imageLeft {
+    direction: rtl;
+}
+
+.imageLeft > * {
+    direction: ltr;
+}
+
+.categoryContent {
+    padding: clamp(60px, 7vw, 100px) clamp(40px, 6vw, 100px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.categoryImage {
+    position: relative;
+    overflow: hidden;
+}
+
+/* ── Wine Items ── */
+.itemList {
+    display: flex;
+    flex-direction: column;
+    gap: 28px;
+    margin-top: 40px;
+}
+
+.wineItem {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.wineItemInner {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.wineName {
+    font-family: ui-serif, Georgia, "Times New Roman", Times, serif;
+    font-size: clamp(18px, 1.8vw, 22px);
+    font-weight: 400;
+    color: #0b2f44;
+    margin: 0;
+    white-space: nowrap;
+}
+
+.wineLine {
+    flex: 1;
+    height: 1px;
+    background: rgba(11, 47, 68, 0.15);
+}
+
+.wineDesc {
+    font-size: 14px;
+    color: rgba(11, 47, 68, 0.55);
+    margin: 0;
+    line-height: 1.6;
+}
+
+/* ── Responsive ── */
+@media (max-width: 900px) {
+    .byGlassBody {
+        grid-template-columns: 1fr;
+    }
+
+    .byGlassImage {
+        height: 300px;
+    }
+
+    .categoryBody {
+        grid-template-columns: 1fr;
+        direction: ltr;
+    }
+
+    .categoryImage {
+        height: 320px;
+    }
+
+    .imageLeft {
+        direction: ltr;
+    }
+
+    .categoryContent {
+        padding: 48px 24px;
+    }
+}

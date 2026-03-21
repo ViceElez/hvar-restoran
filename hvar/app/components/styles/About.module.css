@@ -1,0 +1,36 @@
+.section {
+    background: #ffffff;
+    color: #0b2f44;
+    padding: clamp(56px, 8vw, 120px) 18px;
+}
+
+.inner {
+    width: min(980px, 100%);
+    margin: 0 auto;
+    text-align: center;
+}
+
+.kicker {
+    margin: 0 0 18px;
+    font-size: 14px;
+    letter-spacing: 0.16em;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.title {
+    margin: 0 0 28px;
+    font-size: clamp(44px, 7vw, 92px);
+    line-height: 1.02;
+    letter-spacing: 0.01em;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.text {
+    margin: 0 auto;
+    max-width: 78ch;
+    font-size: clamp(16px, 2.1vw, 21px);
+    line-height: 1.9;
+    color: rgba(11, 47, 68, 0.9);
+}

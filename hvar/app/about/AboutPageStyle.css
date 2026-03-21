@@ -1,0 +1,50 @@
+.aboutWrap {
+  background: #ffffff;
+  color: #0b2f44;
+  padding: clamp(56px, 8vw, 120px) 18px;
+  text-align: center;
+}
+
+.aboutKicker {
+  margin: 0 0 18px;
+  font-size: 13px;
+  letter-spacing: 0.18em;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #f15a24;
+}
+
+.aboutTitle {
+  margin: 0 auto 26px;
+  width: min(1100px, 100%);
+  font-size: clamp(46px, 7vw, 96px);
+  line-height: 1.02;
+  letter-spacing: 0.01em;
+  /* a “classic” look similar to the screenshot */
+  font-family: ui-serif, Georgia, "Times New Roman", Times, serif;
+  font-weight: 500;
+}
+
+.aboutBody {
+  width: min(1040px, 100%);
+  margin: 0 auto;
+}
+
+.aboutBody p {
+  margin: 0 auto;
+  max-width: 110ch;
+  font-size: clamp(16px, 1.55vw, 20px);
+  line-height: 1.9;
+  color: rgba(11, 47, 68, 0.78);
+}
+
+.aboutBody p + p {
+  margin-top: 32px;
+}
+
+@media (max-width: 700px) {
+  .aboutBody p + p {
+	margin-top: 22px;
+  }
+}
+
