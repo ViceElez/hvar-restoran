@@ -1,61 +1,56 @@
+'use client';
+
 import Image from 'next/image';
 import Link from 'next/link';
 import styles from './styles/Split.module.css';
 
+const baseSlides = [
+    { src: '/images/home/img_2.png', alt: 'Fresh fish and seafood', aspectClass: 'tall', offset: 'low' },
+    { src: '/images/home/img_1.png', alt: 'Gariful specialties', aspectClass: 'wide', offset: 'high' },
+    { src: '/images/home/img.png', alt: 'Restaurant view', aspectClass: 'tall', offset: 'mid' },
+    { src: '/images/home/img_2.png', alt: 'Adriatic cuisine', aspectClass: 'wide', offset: 'low' },
+];
+
+// Duplicate enough times that the seam is never visible
+const slides = [...baseSlides, ...baseSlides, ...baseSlides, ...baseSlides];
+
 export default function SplitSection() {
     return (
         <section className={styles.section}>
-
-            {/* Our Story */}
-            <div className={styles.row}>
-                <div className={styles.media}>
-                    <Image
-                        src="/images/home/img_1.png"
-                        alt="Restaurant view"
-                        fill
-                        sizes="(max-width: 900px) 100vw, 55vw"
-                        className={styles.image}
-                        priority={false}
-                    />
+            <div className={styles.header}>
+                <div className={styles.headerLeft}>
+                    <p className={styles.kicker}>WE SERVE FRESHEST CATCHES</p>
+                    <h2 className={styles.title}>OUR<br />MENU</h2>
                 </div>
-                <div className={styles.content}>
-                    <h3 className={styles.kicker}>ABOUT THE RESTAURANT</h3>
-                    <h2 className={styles.title}>OUR STORY</h2>
-                    <p className={styles.text}>
-                        This restaurant has a pretty common name that has a much deeper meaning to its owner.
-                        Namely, "gariful" in the Dalmatian dialect means a carnation – a flower of reconciliation
-                        which symbolizes admiration, respect and deep emotions. It represents the family business
-                        of its owner, who proudly takes his nickname after his father, as the name remained and
-                        imposed itself as a reminder of their first, floral business.
-                    </p>
-                    <Link href="/about" className={styles.cta}>DISCOVER MORE</Link>
-                </div>
-            </div>
-
-            {/* Our Menu */}
-            <div className={`${styles.row} ${styles.rowReverse}`}>
-                <div className={styles.media}>
-                    <Image
-                        src="/images/home/img_2.png"
-                        alt="Fresh fish and seafood"
-                        fill
-                        sizes="(max-width: 900px) 100vw, 55vw"
-                        className={styles.image}
-                    />
-                </div>
-                <div className={styles.content}>
-                    <h3 className={styles.kicker}>WE SERVE FRESHEST CATCHES</h3>
-                    <h2 className={styles.title}>OUR MENU</h2>
-                    <p className={styles.text}>
-                        A long time ago, in 1981, restaurant Gariful first opened its doors wishing to offer its
-                        customers something new and different: a unique pleasure combined with outstanding
-                        specialties, always-fresh fish and seafood, and some of the special, but sometimes also
-                        very rare bottles of wine that the wine cellar of this restaurant can be proud of.
+                <div className={styles.headerRight}>
+                    <p className={styles.desc}>
+                        Since 1981, Restaurant Gariful has offered outstanding specialties,
+                        always-fresh fish and seafood, and rare wines from our celebrated cellar.
                     </p>
                     <Link href="/menu" className={styles.cta}>DISCOVER MORE</Link>
                 </div>
             </div>
 
+            <div className={styles.filmstripWrap}>
+                <div className={styles.filmstrip}>
+                    <div className={styles.track}>
+                        {slides.map((slide, i) => (
+                            <div
+                                key={i}
+                                className={`${styles.card} ${styles[slide.aspectClass]} ${styles[slide.offset]}`}
+                            >
+                                <Image
+                                    src={slide.src}
+                                    alt={slide.alt}
+                                    fill
+                                    sizes="400px"
+                                    className={styles.image}
+                                />
+                            </div>
+                        ))}
+                    </div>
+                </div>
+            </div>
         </section>
     );
 }

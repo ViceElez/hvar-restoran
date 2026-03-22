@@ -1,88 +1,186 @@
 .section {
-    background: #fff;
-}
-
-.row {
-    display: grid;
-    grid-template-columns: 1.05fr 0.95fr;
-    min-height: clamp(520px, 70vh, 820px);
-}
-
-.media {
-    position: relative;
-    min-height: 320px;
+    background: #0b2f44;
     overflow: hidden;
+    padding: clamp(60px, 8vw, 120px) 0 0;
 }
 
-.image {
-    object-fit: cover;
+.header {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    gap: 40px;
+    padding: 0 clamp(24px, 5vw, 90px) clamp(48px, 6vw, 80px);
 }
 
-.content {
+.headerLeft {
+    flex-shrink: 0;
+}
+
+.headerRight {
+    max-width: 420px;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    padding: clamp(40px, 5vw, 84px);
-    color: #0b2f44;
+    align-items: flex-start;
+    gap: 24px;
+    padding-bottom: 8px;
 }
 
 .kicker {
-    margin: 0 0 18px;
-    font-size: 14px;
-    letter-spacing: 0.18em;
+    margin: 0 0 16px;
+    font-size: 12px;
+    letter-spacing: 0.22em;
     font-weight: 700;
     text-transform: uppercase;
+    color: rgba(255, 255, 255, 0.4);
 }
 
 .title {
-    margin: 0 0 22px;
-    font-size: clamp(52px, 6.2vw, 96px);
-    line-height: 0.95;
-    letter-spacing: 0.01em;
-    font-weight: 500;
+    margin: 0;
+    font-size: clamp(64px, 9vw, 140px);
+    line-height: 0.9;
+    letter-spacing: -0.01em;
+    font-weight: 700;
     text-transform: uppercase;
+    color: #ffffff;
+    font-style: italic;
 }
 
-.text {
-    margin: 0 0 34px;
-    max-width: 60ch;
-    font-size: 18px;
-    line-height: 1.9;
-    color: rgba(11, 47, 68, 0.85);
+.desc {
+    margin: 0;
+    font-size: clamp(14px, 1.4vw, 16px);
+    line-height: 1.85;
+    color: rgba(255, 255, 255, 0.55);
 }
 
 .cta {
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    height: 48px;
+    height: 44px;
     padding: 0 28px;
-    border: 2px solid rgba(11, 47, 68, 0.75);
-    color: #0b2f44;
+    border: 1px solid rgba(255, 255, 255, 0.35);
+    color: #ffffff;
     text-decoration: none;
     font-weight: 700;
-    letter-spacing: 0.12em;
+    letter-spacing: 0.14em;
     text-transform: uppercase;
-    font-size: 13px;
+    font-size: 12px;
     width: fit-content;
-    background: transparent;
+    transition: border-color 160ms ease, background 160ms ease;
 }
 
 .cta:hover {
-    border-color: #0b2f44;
+    border-color: #ffffff;
+    background: rgba(255, 255, 255, 0.06);
 }
 
-.rowReverse .content {
-    order: -1;
+/* ── Filmstrip ── */
+.filmstripWrap {
+    position: relative;
+    /* Fade edges for a polished look */
+    -webkit-mask-image: linear-gradient(
+            to right,
+            transparent 0%,
+            black 6%,
+            black 94%,
+            transparent 100%
+    );
+    mask-image: linear-gradient(
+            to right,
+            transparent 0%,
+            black 6%,
+            black 94%,
+            transparent 100%
+    );
 }
 
-@media (max-width: 900px) {
-    .row {
-        grid-template-columns: 1fr;
-        min-height: auto;
+.filmstrip {
+    overflow: hidden;
+    padding-bottom: clamp(48px, 6vw, 80px);
+}
+
+/* The scrolling track — translateX animation drives the loop */
+.track {
+    display: flex;
+    align-items: flex-end;
+    gap: clamp(12px, 2vw, 24px);
+    width: max-content;
+    padding: 0 clamp(12px, 2vw, 24px);
+
+    animation: scroll 40s linear infinite;
+}
+
+/* Pause on hover for readability */
+.filmstrip:hover .track {
+    animation-play-state: paused;
+}
+
+@keyframes scroll {
+    0%   { transform: translateX(0); }
+    100% { transform: translateX(-25%); } /* 1 of 4 copies = 25% */
+}
+
+/* Card base */
+.card {
+    position: relative;
+    flex-shrink: 0;
+    overflow: hidden;
+    border-radius: 2px;
+}
+
+/* Aspect variants */
+.tall {
+    width: clamp(220px, 22vw, 340px);
+    height: clamp(320px, 42vw, 520px);
+}
+
+.wide {
+    width: clamp(300px, 32vw, 480px);
+    height: clamp(220px, 28vw, 360px);
+}
+
+/* Vertical offset variants */
+.high {
+    margin-bottom: clamp(60px, 8vw, 120px);
+}
+
+.mid {
+    margin-bottom: clamp(30px, 4vw, 60px);
+}
+
+.low {
+    margin-bottom: 0;
+}
+
+.image {
+    object-fit: cover;
+    object-position: center;
+    transition: transform 600ms ease;
+    pointer-events: none;
+}
+
+.card:hover .image {
+    transform: scale(1.04);
+}
+
+@media (max-width: 700px) {
+    .header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 24px;
     }
 
-    .content {
-        padding: 36px 18px 56px;
+    .headerRight {
+        max-width: 100%;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .track {
+        animation: none;
+    }
+
+    .image {
+        transition: none;
     }
 }
