@@ -14,9 +14,7 @@ export default function HeroSection() {
                 ]}
             />
             <div className={styles.hero}>
-                <h1 className={styles.title}>RESTAURANT WITH A BREATH TAKING SUNSET VIEW</h1>
-                <p className={styles.subtitle}>Enjoy fresh seafood and an unforgettable evening by the sea.</p>
-                <Link href="/reservate" className={styles.cta}>BOOK A TABLE</Link>
+                <h1 className={styles.title}>A MEDITERRANEAN ESCAPE IN THE HEART OF HVAR</h1>
             </div>
             <div className={styles.wave}>
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320" preserveAspectRatio="none">

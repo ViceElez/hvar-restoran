@@ -11,11 +11,7 @@ export default function AboutSection() {
                     <span className={styles.spark} aria-hidden="true">✦</span>
                     <h2 className={styles.title}>OUR STORY</h2>
                     <p className={styles.text}>
-                        Restaurant Gariful is situated on the sunniest island of the Croatian coast, at the very
-                        waterfront of the town of Hvar, where the most luxurious yachts in the world are aligned
-                        next to one another. Thanks to its excellent position, exceptional specialties and a rich
-                        wine card, every guest can enjoy the stunning view, a great atmosphere and the unique
-                        gastronomic pleasures of this restaurant.
+                        Located in the heart of Hvar, Elysium offers a unique dining experience where Mediterranean flavors meet the relaxed spirit of island life. Just steps away from the vibrant town square and beautiful Adriatic views, our restaurant is a place to slow down, enjoy fresh local ingredients, and share unforgettable moments. Whether you're stopping by for a sunset dinner or a late evening glass of wine, Elysium brings together great food, a warm atmosphere, and the timeless charm of Hvar.
                     </p>
                     <Link href="/about" className={styles.cta}>
                         READ MORE
@@ -25,7 +21,7 @@ export default function AboutSection() {
                 <div className={styles.media}>
                     <Image
                         src="/images/home/img_3.png"
-                        alt="About Gariful"
+                        alt="About Elysium"
                         fill
                         sizes="(max-width: 900px) 100vw, 50vw"
                         className={styles.image}

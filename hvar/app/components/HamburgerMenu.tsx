@@ -23,11 +23,10 @@ export default function HamburgerMenu({
                                             href: '',
                                             label: 'MENU',
                                             children: [
-                                              { href: '/menu', label: 'GARIFUL DINNER MENU' },
+                                              { href: '/menu', label: 'ELYSIUM DINNER MENU' },
                                               { href: '/wine-list', label: 'WINE LIST' },
                                             ],
                                           },
-                                          { href: '/reservate', label: 'BOOK A TABLE' },
                                           { href: '/contact', label: 'CONTACT' },
                                         ],
                                       }: HamburgerMenuProps) {
@@ -208,11 +207,11 @@ export default function HamburgerMenu({
               <span className={styles.iconBubble}>📍</span>
               <a
                   className={styles.footerLink}
-                  href="https://www.google.com/maps/search/?api=1&query=Riva%2021%2C%2021450%2C%20Hvar"
+                  href="https://www.google.com/maps/search/?api=1&query=Marije%20Mari%C4%8Di%C4%87%2017%2C%2021450%2C%20Hvar"
                   target="_blank"
                   rel="noopener noreferrer"
               >
-                Riva 21, 21450, Hvar
+                Marije Maričić 17, 21450, Hvar
               </a>
             </div>
             <div className={styles.footerRow}>
@@ -221,7 +220,7 @@ export default function HamburgerMenu({
             </div>
             <div className={styles.footerRow}>
               <span className={styles.iconBubble}>✉️</span>
-              <span>restaurantgariful.hvar@gmail.com</span>
+              <span>restaurantelysium.hvar@gmail.com</span>
             </div>
           </div>
         </div>

@@ -7,7 +7,7 @@ export default function SpecialtiesSection() {
             <div className={styles.imageWrapper}>
                 <Image
                     src="/images/home/img_1.png"
-                    alt="Gariful specialties"
+                    alt="Elysium specialties"
                     fill
                     sizes="100vw"
                     style={{ objectFit: 'cover' }}
@@ -16,7 +16,7 @@ export default function SpecialtiesSection() {
 
             <div className={styles.content}>
                 <h3 className={styles.kicker}>RECOMMENDATIONS</h3>
-                <h2 className={styles.title}>GARIFUL SPECIALTIES</h2>
+                <h2 className={styles.title}>ELYSIUM SPECIALTIES</h2>
                 <div className={styles.item}>
                     <h4 className={styles.name}>Lobster Carpaccio</h4>
                     <p className={styles.desc}>Fresh Adriatic lobster / Madagascar vanilla and fresh cucumber extra virgin olive oil / lemon</p>

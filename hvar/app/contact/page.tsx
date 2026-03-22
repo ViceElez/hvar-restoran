@@ -3,9 +3,6 @@ import Image from 'next/image';
 export default function Contact() {
   return (
     <main style={{ background: '#ffffff' }}>
-      {/* Top wave (same style as used elsewhere, but dark) */}
-
-      {/* Page header */}
       <section
         style={{
           maxWidth: 1180,
@@ -36,7 +33,7 @@ export default function Contact() {
             lineHeight: 1.05,
           }}
         >
-          FIND US ON HVAR WATERFRONT
+          FIND US IN HEART OF HVAR
         </h1>
         <p
           style={{
@@ -48,8 +45,7 @@ export default function Contact() {
             lineHeight: 1.8,
           }}
         >
-          For reservations, events, or special requests, reach us by phone or email. We’re located directly on
-          the waterfront with an unforgettable sunset view.
+            For reservations, events, or special requests, feel free to contact us by phone or email. Located in the heart of Hvar, Elysium offers an unforgettable dining experience with stunning sunset views.
         </p>
       </section>
 
@@ -67,8 +63,11 @@ export default function Contact() {
         {[
           {
             title: 'Location',
-            lines: ['Riva 21, 21450, Hvar', 'Croatia'],
-            action: { label: 'View on map', href: 'https://www.google.com/maps/search/?api=1&query=Riva%2021%2C%2021450%2C%20Hvar' },
+            lines: ['Marije Maričić 17, 21450, Hvar', 'Croatia'],
+            action: {
+              label: 'View on map',
+              href: 'https://www.google.com/maps/search/?api=1&query=Marije%20Mari%C4%8Di%C4%87%2017%2C%2021450%2C%20Hvar',
+            },
           },
           {
             title: 'Phone',
@@ -77,8 +76,8 @@ export default function Contact() {
           },
           {
             title: 'Email',
-            lines: ['restaurantgariful.hvar@gmail.com'],
-            action: { label: 'Send email', href: 'mailto:restaurantgariful.hvar@gmail.com' },
+            lines: ['restaurantelysium.hvar@gmail.com'],
+            action: { label: 'Send email', href: 'mailto:restaurantelysium.hvar@gmail.com' },
           },
         ].map((card) => (
           <div
@@ -142,7 +141,7 @@ export default function Contact() {
           alignItems: 'stretch',
         }}
       >
-        {[{ src: '/images/home/img.png', alt: 'Restaurant view' }, { src: '/images/home/11.png', alt: 'Restaurant atmosphere' }].map(
+        {[{ src: '/images/home/img.png', alt: 'Restaurant view' }, { src: '/images/home/img_1.png', alt: 'Restaurant atmosphere' }].map(
           (img) => (
             <div
               key={img.src}

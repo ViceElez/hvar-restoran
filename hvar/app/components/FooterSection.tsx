@@ -39,12 +39,12 @@ export default function FooterSection() {
 
                 <div className={styles.col}>
                     <h4 className={styles.heading}>LOCATION</h4>
-                    <p className={styles.text}>Riva</p>
-                    <p className={styles.text}>21 450 Hvar</p>
+                    <p className={styles.text}>Marije Maričić 17</p>
+                    <p className={styles.text}>21450 Hvar</p>
                     <p className={styles.text}>Croatia</p>
                     <p className={styles.text}>+385 (0)21 742 999</p>
                     <a
-                        href="https://www.google.com/maps/search/?api=1&query=Riva%2021%2C%2021450%2C%20Hvar"
+                        href="https://www.google.com/maps/search/?api=1&query=Marije%20Mari%C4%8Di%C4%87%2017%2C%2021450%2C%20Hvar"
                         className={styles.mapLink}
                         target="_blank"
                         rel="noopener noreferrer"
