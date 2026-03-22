@@ -19,6 +19,8 @@
   font-weight: 700;
   font-size: clamp(36px, 8vw, 96px);
   line-height: 1.02;
+  max-width: min(22ch, 94vw);
+  text-wrap: balance;
   margin: 0 20px 20px;
 }
 
@@ -109,7 +111,7 @@
 
 @media (max-width: 380px) {
   .title {
-    font-size: 24px;
+    font-size: 30px;
     margin: 0 14px 12px;
   }
 
