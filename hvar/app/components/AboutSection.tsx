@@ -11,7 +11,12 @@ export default function AboutSection() {
                     <span className={styles.spark} aria-hidden="true">✦</span>
                     <h2 className={styles.title}>OUR STORY</h2>
                     <p className={styles.text}>
-                        Located in the heart of Hvar, Elysium offers a unique dining experience where Mediterranean flavors meet the relaxed spirit of island life. Just steps away from the vibrant town square and beautiful Adriatic views, our restaurant is a place to slow down, enjoy fresh local ingredients, and share unforgettable moments. Whether you're stopping by for a sunset dinner or a late evening glass of wine, Elysium brings together great food, a warm atmosphere, and the timeless charm of Hvar.
+                        A place where the Adriatic sets the rhythm and time slows to the pace of the sea.
+                        Here, daily catch defines the menu, fire and salt shape the flavours, and simplicity is elevated to its
+                        purest form. ELYSIUM is dedicated to the art of fish and seafood — respectful to tradition, guided
+                        by season, and refined through contemporary technique. Every dish is created to honour the
+                        ingredient, the moment, and the experience of dining without compromise.
+                        Sit back, trust the kitchen, and allow the sea to lead the way.
                     </p>
                     <Link href="/about" className={styles.cta}>
                         READ MORE
