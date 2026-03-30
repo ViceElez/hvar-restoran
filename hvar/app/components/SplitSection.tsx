@@ -5,10 +5,10 @@ import Link from 'next/link';
 import styles from './styles/Split.module.css';
 
 const baseSlides = [
-    { src: '/images/home/img_2.png', alt: 'Fresh fish and seafood', aspectClass: 'tall', offset: 'low' },
-    { src: '/images/home/img_1.png', alt: 'Elysium specialties', aspectClass: 'wide', offset: 'high' },
-    { src: '/images/home/img.png', alt: 'Restaurant view', aspectClass: 'tall', offset: 'mid' },
-    { src: '/images/home/img_2.png', alt: 'Adriatic cuisine', aspectClass: 'wide', offset: 'low' },
+    { src: '/images/home/img_2.webp', alt: 'Hvar Riva Image', aspectClass: 'tall', offset: 'low' },
+    { src: '/images/home/img_1.webp', alt: 'Lobster Image', aspectClass: 'wide', offset: 'high' },
+    { src: '/images/home/img.webp', alt: 'Restaurant Table Image', aspectClass: 'tall', offset: 'mid' },
+    { src: '/images/home/img_2.webp', alt: 'Hvar Riva Image', aspectClass: 'wide', offset: 'low' },
 ];
 
 const slides = [...baseSlides, ...baseSlides, ...baseSlides, ...baseSlides];

@@ -6,8 +6,8 @@ export default function SpecialtiesSection() {
         <section className={styles.section}>
             <div className={styles.imageWrapper}>
                 <Image
-                    src="/images/home/img_1.png"
-                    alt="Elysium specialties"
+                    src="/images/home/img_1.webp"
+                    alt="Lobster Image"
                     fill
                     sizes="100vw"
                     style={{ objectFit: 'cover' }}
@@ -18,20 +18,20 @@ export default function SpecialtiesSection() {
                 <h3 className={styles.kicker}>RECOMMENDATIONS</h3>
                 <h2 className={styles.title}>ELYSIUM SPECIALTIES</h2>
                 <div className={styles.item}>
-                    <h4 className={styles.name}>Lobster Carpaccio</h4>
-                    <p className={styles.desc}>Fresh Adriatic lobster / Madagascar vanilla and fresh cucumber extra virgin olive oil / lemon</p>
+                    <h4 className={styles.name}>Elysium Sea Plate</h4>
+                    <p className={styles.desc}>White fish / scampi / squid / seasonal side dishes</p>
                 </div>
                 <div className={styles.item}>
-                    <h4 className={styles.name}>"Drunken" Lobster 1 Kg</h4>
-                    <p className={styles.desc}>Cognac / tomato sauce / spaghettini di Gragnano / Parmigiano Reggiano</p>
+                    <h4 className={styles.name}>Lobster Gone Wild</h4>
+                    <p className={styles.desc}>Lobster buzara style / cognac / tomato sauce / spaghetti</p>
                 </div>
                 <div className={styles.item}>
-                    <h4 className={styles.name}>Wagyu 250 G</h4>
-                    <p className={styles.desc}>Premium Japanese beef</p>
+                    <h4 className={styles.name}>Champagne & Saffron Risotto</h4>
+                    <p className={styles.desc}>Aged rice / Champagne / saffron / seared scallops</p>
                 </div>
                 <div className={styles.item}>
-                    <h4 className={styles.name}>Ribeye Steak</h4>
-                    <p className={styles.desc}>130-Days Dry-Aged Ribeye Steak</p>
+                    <h4 className={styles.name}>Glazed Lamb Shank</h4>
+                    <p className={styles.desc}>Slow-braised lamb shank / honey glaze / pickled vegetables / jus</p>
                 </div>
             </div>
         </section>

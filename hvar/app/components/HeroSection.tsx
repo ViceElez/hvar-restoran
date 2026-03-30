@@ -8,9 +8,9 @@ export default function HeroSection() {
             <FullscreenSlideshow
                 secondsPerImage={8}
                 images={[
-                    { src: '/images/home/img.png', alt: 'Slideshow image 1' },
-                    { src: '/images/home/img_1.png', alt: 'Slideshow image 2' },
-                    { src: '/images/home/img_2.png', alt: 'Slideshow image 3' },
+                    { src: '/images/home/img.webp', alt: 'Restaurant Table Image' },
+                    { src: '/images/home/img_1.webp', alt: 'Lobster Image' },
+                    { src: '/images/home/img_2.webp', alt: 'Hvar Riva Image' },
                 ]}
             />
             <div className={styles.hero}>

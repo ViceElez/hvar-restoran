@@ -129,7 +129,6 @@ export default function Contact() {
         ))}
       </section>
 
-      {/* Images (reuse existing slideshow images) */}
       <section
         style={{
           maxWidth: 1180,
@@ -141,7 +140,7 @@ export default function Contact() {
           alignItems: 'stretch',
         }}
       >
-        {[{ src: '/images/home/img.png', alt: 'Restaurant view' }, { src: '/images/home/img_1.png', alt: 'Restaurant atmosphere' }].map(
+        {[{ src: '/images/home/img.webp', alt: 'Restaurant Table Image' }, { src: '/images/home/img_2.webp', alt: 'Hvar Riva Image' }].map(
           (img) => (
             <div
               key={img.src}

@@ -25,7 +25,7 @@ export default function AboutSection() {
 
                 <div className={styles.media}>
                     <Image
-                        src="/images/home/img_3.png"
+                        src="/images/home/img_3.webp"
                         alt="About Elysium"
                         fill
                         sizes="(max-width: 900px) 100vw, 50vw"
