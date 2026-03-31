@@ -8,4 +8,50 @@ body {
 
 body {
   margin: 0;
+  font-family: var(--font-body), system-ui, -apple-system, "Segoe UI", Arial, sans-serif;
+  font-weight: 300;
+  color: var(--color-text);
+  background: var(--color-secondary);
+}
+
+:root {
+  /* ── Palette ── */
+  --color-primary: #C17855;   /* terracotta */
+  --color-secondary: #F5EBE0; /* warm cream */
+  --color-accent: #5A6C57;    /* deep olive */
+  --color-text: #2C2C2C;      /* charcoal */
+  --color-white: #FFFFFF;
+
+  /* Hero-vibe dark surfaces (warm espresso) */
+  --color-hero-surface: #14110f;
+  --color-hero-surface-2: #1b1714;
+  --color-hero-accent: #c9a96e; /* warm gold */
+
+  /* Hovers */
+  --color-accent-hover: #4F5F4C;
+
+  /* Font variables (populated at runtime by next/font classes) */
+  --font-heading: "Cormorant Garamond";
+  --font-body: "Montserrat";
+
+  --focus-ring: 0 0 0 3px rgba(90, 108, 87, 0.35);
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-heading), ui-serif, Georgia, "Times New Roman", Times, serif;
+  font-weight: 600;
+}
+
+a {
+  color: var(--color-accent);
+}
+
+a:hover {
+  color: var(--color-accent-hover);
+}
+
+:where(a, button, [role="button"], input, textarea, select):focus-visible {
+  outline: none;
+  box-shadow: var(--focus-ring);
+  border-radius: 4px;
 }

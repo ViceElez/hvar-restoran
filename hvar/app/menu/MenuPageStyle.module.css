@@ -1,9 +1,9 @@
 .page {
-    background: #fff;
+    background: var(--color-secondary);
 }
 
 .main {
-    background: #fff;
+    background: var(--color-secondary);
     padding: clamp(60px, 8vw, 120px) clamp(24px, 8vw, 140px);
     max-width: 1400px;
     margin: 0 auto;
@@ -20,13 +20,22 @@
 }
 
 .kicker {
-    font-size: 13px;
-    font-weight: 700;
-    font-family: ui-serif, Georgia, "Times New Roman", Times, serif;
+    margin: 0 0 14px;
+    font-size: 12px;
+    letter-spacing: 0.22em;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: var(--color-hero-accent);
+    font-family: var(--font-body), system-ui, -apple-system, "Segoe UI", Arial, sans-serif;
+    text-align: center;
+}
+
+.title {
+    font-family: var(--font-heading), ui-serif, Georgia, "Times New Roman", Times, serif;
     font-size: clamp(36px, 6vw, 80px);
-    font-weight: 400;
-    color: #0b2f44;
-    letter-spacing: 0.04em;
+    font-weight: 500;
+    color: var(--color-text);
+    letter-spacing: 0.06em;
     margin: 0;
     text-transform: uppercase;
 }
@@ -40,11 +49,11 @@
 
 .item {
     padding: clamp(20px, 2.5vw, 32px) clamp(16px, 2vw, 28px);
-    border-bottom: 1px solid rgba(11, 47, 68, 0.1);
+    border-bottom: 1px solid rgba(44, 44, 44, 0.10);
 }
 
 .item:nth-child(odd) {
-    border-right: 1px solid rgba(11, 47, 68, 0.1);
+    border-right: 1px solid rgba(44, 44, 44, 0.10);
 }
 
 /* ── Item ── */
@@ -64,10 +73,10 @@
 }
 
 .name {
-    font-family: ui-serif, Georgia, "Times New Roman", Times, serif;
+    font-family: var(--font-heading), ui-serif, Georgia, "Times New Roman", Times, serif;
     font-size: clamp(16px, 1.6vw, 20px);
-    font-weight: 400;
-    color: #0b2f44;
+    font-weight: 500;
+    color: var(--color-text);
     letter-spacing: 0.06em;
     margin: 0;
     text-transform: uppercase;
@@ -78,7 +87,7 @@
     font-weight: 700;
     letter-spacing: 0.1em;
     text-transform: uppercase;
-    background: #f15a24;
+    background: var(--color-primary);
     color: #fff;
     padding: 3px 8px;
     border-radius: 3px;
@@ -89,7 +98,7 @@
 .price {
     font-size: clamp(15px, 1.4vw, 18px);
     font-weight: 400;
-    color: #0b2f44;
+    color: var(--color-text);
     white-space: nowrap;
     flex-shrink: 0;
 }
@@ -97,8 +106,9 @@
 .desc {
     font-size: clamp(13px, 1.1vw, 15px);
     line-height: 1.7;
-    color: rgba(11, 47, 68, 0.6);
+    color: rgba(44, 44, 44, 0.72);
     margin: 0;
+    font-family: var(--font-body), system-ui, -apple-system, "Segoe UI", Arial, sans-serif;
 }
 
 /* ── Responsive ── */

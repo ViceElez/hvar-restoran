@@ -2,7 +2,7 @@ import Image from 'next/image';
 
 export default function Contact() {
   return (
-    <main style={{ background: '#ffffff' }}>
+    <main style={{ background: 'var(--color-secondary)' }}>
       <section
         style={{
           maxWidth: 1180,
@@ -14,12 +14,12 @@ export default function Contact() {
         <p
           style={{
             margin: 0,
-            fontFamily: '"Barlow Condensed", system-ui, -apple-system, "Segoe UI", Arial, sans-serif',
+            fontFamily: 'var(--font-body), system-ui, -apple-system, "Segoe UI", Arial, sans-serif',
             textTransform: 'uppercase',
             letterSpacing: '0.3em',
             fontWeight: 600,
             fontSize: 12,
-            color: '#0b2f44',
+            color: 'var(--color-hero-accent)',
           }}
         >
           Contact
@@ -27,7 +27,8 @@ export default function Contact() {
         <h1
           style={{
             margin: '14px 0 10px',
-            color: '#0b1a2b',
+            fontFamily: 'var(--font-heading), ui-serif, Georgia, "Times New Roman", Times, serif',
+            color: 'var(--color-text)',
             fontWeight: 600,
             fontSize: 'clamp(34px, 4vw, 56px)',
             lineHeight: 1.05,
@@ -40,9 +41,10 @@ export default function Contact() {
             margin: 0,
             maxWidth: 760,
             marginInline: 'auto',
-            color: '#425466',
+            color: 'rgba(44, 44, 44, 0.82)',
             fontSize: 16,
             lineHeight: 1.8,
+            fontFamily: 'var(--font-body), system-ui, -apple-system, "Segoe UI", Arial, sans-serif',
           }}
         >
             For reservations, events, or special requests, feel free to contact us by phone or email. Located in the heart of Hvar, Elysium offers an unforgettable dining experience with stunning sunset views.
@@ -83,26 +85,26 @@ export default function Contact() {
           <div
             key={card.title}
             style={{
-              border: '1px solid rgba(11, 47, 68, 0.12)',
+              border: '1px solid rgba(44, 44, 44, 0.14)',
               borderRadius: 14,
               padding: '18px 18px 16px',
-              background: '#fbfcfe',
+              background: 'rgba(255, 255, 255, 0.55)',
             }}
           >
             <h3
               style={{
                 margin: 0,
-                fontFamily: '"Barlow Condensed", system-ui, -apple-system, "Segoe UI", Arial, sans-serif',
+                fontFamily: 'var(--font-body), system-ui, -apple-system, "Segoe UI", Arial, sans-serif',
                 textTransform: 'uppercase',
                 letterSpacing: '0.18em',
                 fontWeight: 700,
                 fontSize: 14,
-                color: '#0b2f44',
+                color: 'var(--color-text)',
               }}
             >
               {card.title}
             </h3>
-            <div style={{ marginTop: 10, color: '#0b1a2b', fontSize: 16, lineHeight: 1.7 }}>
+            <div style={{ marginTop: 10, color: 'var(--color-text)', fontSize: 16, lineHeight: 1.7, fontFamily: 'var(--font-body), system-ui, -apple-system, "Segoe UI", Arial, sans-serif' }}>
               {card.lines.map((l) => (
                 <div key={l}>{l}</div>
               ))}
@@ -114,9 +116,9 @@ export default function Contact() {
               style={{
                 display: 'inline-block',
                 marginTop: 12,
-                color: '#f15a24',
+                color: 'var(--color-primary)',
                 textDecoration: 'none',
-                fontFamily: '"Barlow Condensed", system-ui, -apple-system, "Segoe UI", Arial, sans-serif',
+                fontFamily: 'var(--font-body), system-ui, -apple-system, "Segoe UI", Arial, sans-serif',
                 textTransform: 'uppercase',
                 letterSpacing: '0.12em',
                 fontWeight: 700,

@@ -17,7 +17,7 @@
 }
 
 .button:focus-visible {
-  outline: 2px solid #ffffff;
+  outline: 2px solid var(--color-white);
   outline-offset: 3px;
 }
 
@@ -37,7 +37,7 @@
   left: 0;
   right: 0;
   height: 2px;
-  background: #ffffff;
+  background: var(--color-white);
   border-radius: 2px;
 }
 
@@ -49,7 +49,7 @@
 .backdrop {
   position: fixed;
   inset: 0;
-  background: rgba(0, 0, 0, 0.35);
+  background: rgba(20, 17, 15, 0.55);
   opacity: 0;
   pointer-events: none;
   transition: opacity 220ms ease;
@@ -68,14 +68,18 @@
   left: 0;
   height: 100svh;
   width: min(86vw, 420px);
-  background: #f7f8fa;
+  background: var(--color-secondary);
   transform: translateX(-100%);
   transition: transform 320ms ease;
   z-index: 45;
   display: flex;
   flex-direction: column;
   overflow-y: auto;
-  font-family: "Barlow Condensed", system-ui, -apple-system, "Segoe UI", Arial, sans-serif;
+  font-family: var(--font-body), system-ui, -apple-system, "Segoe UI", Arial, sans-serif;
+}
+
+.panel {
+  box-shadow: 0 16px 50px rgba(0, 0, 0, 0.25);
 }
 
 .panelOpen {
@@ -95,6 +99,11 @@
   font-size: 28px;
   line-height: 1;
   cursor: pointer;
+  color: var(--color-text);
+}
+
+.close:hover {
+  color: var(--color-primary);
 }
 
 .nav {
@@ -109,8 +118,14 @@
   font-weight: 600;
   font-size: 44px;
   letter-spacing: 0.02em;
-  color: #0b1a2b;
+  color: var(--color-text);
   display: block;
+  font-family: var(--font-heading), ui-serif, Georgia, "Times New Roman", Times, serif;
+  text-transform: uppercase;
+}
+
+.link:hover {
+  color: var(--color-primary);
 }
 
 /* Use the same visual style as .link, but as a <button> for dropdown labels */
@@ -121,21 +136,21 @@
   background: transparent;
   padding: 0;
   cursor: pointer;
-  font-family: "Barlow Condensed", system-ui, -apple-system, "Segoe UI", Arial, sans-serif;
+  font-family: var(--font-heading), ui-serif, Georgia, "Times New Roman", Times, serif;
   font-size: 44px;
   font-weight: 600;
   letter-spacing: 0.02em;
-  color: #0b1a2b;
+  color: var(--color-text);
   text-transform: uppercase;
 }
 
 .dropdownLabelBtn:focus-visible {
-  outline: 2px solid #0b1a2b;
+  outline: 2px solid var(--color-text);
   outline-offset: 4px;
 }
 
 .active {
-  color: #f15a24;
+  color: var(--color-primary);
 }
 
 /* ── Dropdown ── */
@@ -157,12 +172,16 @@
   background: transparent;
   cursor: pointer;
   font-size: 28px;
-  color: #0b1a2b;
+  color: var(--color-text);
   line-height: 1;
   padding: 4px 8px;
   transform: rotate(-90deg);
   transition: transform 240ms ease;
   flex-shrink: 0;
+}
+
+.chevronBtn:hover {
+  color: var(--color-primary);
 }
 
 .chevronOpen {
@@ -190,16 +209,17 @@
   font-weight: 600;
   letter-spacing: 0.1em;
   text-transform: uppercase;
-  color: #0b1a2b;
+  color: rgba(44, 44, 44, 0.82);
   transition: color 160ms ease;
+  font-family: var(--font-body), system-ui, -apple-system, "Segoe UI", Arial, sans-serif;
 }
 
 .dropdownLink:hover {
-  color: #f15a24;
+  color: var(--color-primary);
 }
 
 .dropdownLinkActive {
-  color: #f15a24;
+  color: var(--color-primary);
 }
 
 /* ── Social links ── */
@@ -214,14 +234,19 @@
   text-decoration: none;
   font-weight: 600;
   font-size: 16px;
-  color: #0b1a2b;
+  color: rgba(44, 44, 44, 0.82);
+  font-family: var(--font-body), system-ui, -apple-system, "Segoe UI", Arial, sans-serif;
+}
+
+.smallLink:hover {
+  color: var(--color-primary);
 }
 
 /* ── Footer ── */
 .footer {
   margin-top: auto;
   padding: 18px;
-  border-top: 1px solid rgba(0, 0, 0, 0.08);
+  border-top: 1px solid rgba(44, 44, 44, 0.10);
   display: flex;
   flex-direction: column;
   gap: 14px;
@@ -232,7 +257,8 @@
   gap: 12px;
   align-items: center;
   font-size: 14px;
-  color: #0b1a2b;
+  color: rgba(44, 44, 44, 0.86);
+  font-family: var(--font-body), system-ui, -apple-system, "Segoe UI", Arial, sans-serif;
 }
 
 .footerLink {
@@ -245,7 +271,7 @@
 }
 
 .footerLink:focus-visible {
-  outline: 2px solid #0b1a2b;
+  outline: 2px solid var(--color-text);
   outline-offset: 3px;
   border-radius: 4px;
 }
@@ -256,8 +282,8 @@
   border-radius: 999px;
   display: grid;
   place-items: center;
-  background: #fff;
-  border: 1px solid rgba(0, 0, 0, 0.08);
+  background: rgba(255, 255, 255, 0.7);
+  border: 1px solid rgba(44, 44, 44, 0.10);
   flex: 0 0 auto;
 }
 

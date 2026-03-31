@@ -1,6 +1,6 @@
 .aboutWrap {
-  background: #ffffff;
-  color: #0b2f44;
+  background: var(--color-secondary);
+  color: var(--color-text);
   padding: clamp(56px, 8vw, 120px) 18px;
   text-align: center;
 }
@@ -11,7 +11,8 @@
   letter-spacing: 0.18em;
   font-weight: 700;
   text-transform: uppercase;
-  color: #f15a24;
+  color: var(--color-hero-accent);
+  font-family: var(--font-body), system-ui, -apple-system, "Segoe UI", Arial, sans-serif;
 }
 
 .aboutTitle {
@@ -21,7 +22,7 @@
   line-height: 1.02;
   letter-spacing: 0.01em;
   /* a “classic” look similar to the screenshot */
-  font-family: ui-serif, Georgia, "Times New Roman", Times, serif;
+  font-family: var(--font-heading), ui-serif, Georgia, "Times New Roman", Times, serif;
   font-weight: 500;
 }
 
@@ -35,7 +36,8 @@
   max-width: 110ch;
   font-size: clamp(16px, 1.55vw, 20px);
   line-height: 1.9;
-  color: rgba(11, 47, 68, 0.78);
+  color: rgba(44, 44, 44, 0.84);
+  font-family: var(--font-body), system-ui, -apple-system, "Segoe UI", Arial, sans-serif;
 }
 
 .aboutBody p + p {
