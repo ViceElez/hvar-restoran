@@ -2,13 +2,6 @@
     background: #fff;
 }
 
-.waveTransition {
-    line-height: 0;
-    margin-top: -130px;
-    position: relative;
-    z-index: 10;
-}
-
 .main {
     background: #fff;
     padding: clamp(60px, 8vw, 120px) clamp(24px, 8vw, 140px);
@@ -29,13 +22,6 @@
 .kicker {
     font-size: 13px;
     font-weight: 700;
-    letter-spacing: 0.18em;
-    color: #0b2f44;
-    margin: 0 0 14px;
-    text-transform: uppercase;
-}
-
-.title {
     font-family: ui-serif, Georgia, "Times New Roman", Times, serif;
     font-size: clamp(36px, 6vw, 80px);
     font-weight: 400;
