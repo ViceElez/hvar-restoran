@@ -1,5 +1,5 @@
 .section {
-    background: #0b2f44;
+    background: #14110f;
     overflow: hidden;
     padding: clamp(60px, 8vw, 120px) 0 0;
 }
@@ -31,7 +31,9 @@
     letter-spacing: 0.22em;
     font-weight: 700;
     text-transform: uppercase;
-    color: rgba(255, 255, 255, 0.4);
+    color: #c9a96e;
+    font-family: 'Playfair Display', Georgia, serif;
+    font-style: italic;
 }
 
 .title {
@@ -43,13 +45,17 @@
     text-transform: uppercase;
     color: #ffffff;
     font-style: italic;
+    font-family: 'Playfair Display', Georgia, serif;
+    text-shadow: 0 2px 4px rgba(0,0,0,0.75), 0 8px 32px rgba(0,0,0,0.45);
 }
 
 .desc {
     margin: 0;
     font-size: clamp(14px, 1.4vw, 16px);
     line-height: 1.85;
-    color: rgba(255, 255, 255, 0.55);
+    color: rgba(255, 255, 255, 0.78);
+    font-family: 'Playfair Display', Georgia, serif;
+    font-style: italic;
 }
 
 .cta {
@@ -57,27 +63,30 @@
     align-items: center;
     justify-content: center;
     height: 44px;
-    padding: 0 28px;
-    border: 1px solid rgba(255, 255, 255, 0.35);
+    padding: 0 30px;
+    border: 1px solid rgba(255, 255, 255, 0.30);
+    background: rgba(20, 17, 15, 0.65);
     color: #ffffff;
     text-decoration: none;
     font-weight: 700;
-    letter-spacing: 0.14em;
+    letter-spacing: 0.18em;
     text-transform: uppercase;
     font-size: 12px;
     width: fit-content;
-    transition: border-color 160ms ease, background 160ms ease;
+    font-family: 'Playfair Display', Georgia, serif;
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    transition: border-color 200ms ease, background 200ms ease, transform 180ms ease;
 }
 
 .cta:hover {
-    border-color: #ffffff;
-    background: rgba(255, 255, 255, 0.06);
+    border-color: #c9a96e;
+    background: rgba(201, 169, 110, 0.22);
+    transform: translateY(-2px);
 }
 
-/* ── Filmstrip ── */
 .filmstripWrap {
     position: relative;
-    /* Fade edges for a polished look */
     -webkit-mask-image: linear-gradient(
             to right,
             transparent 0%,
@@ -99,7 +108,6 @@
     padding-bottom: clamp(48px, 6vw, 80px);
 }
 
-/* The scrolling track — translateX animation drives the loop */
 .track {
     display: flex;
     align-items: flex-end;
@@ -110,17 +118,17 @@
     animation: scroll 40s linear infinite;
 }
 
-/* Pause on hover for readability */
+
 .filmstrip:hover .track {
     animation-play-state: paused;
 }
 
 @keyframes scroll {
     0%   { transform: translateX(0); }
-    100% { transform: translateX(-25%); } /* 1 of 4 copies = 25% */
+    100% { transform: translateX(-25%); }
 }
 
-/* Card base */
+
 .card {
     position: relative;
     flex-shrink: 0;
@@ -128,7 +136,7 @@
     border-radius: 2px;
 }
 
-/* Aspect variants */
+
 .tall {
     width: clamp(220px, 22vw, 340px);
     height: clamp(320px, 42vw, 520px);
@@ -139,7 +147,6 @@
     height: clamp(220px, 28vw, 360px);
 }
 
-/* Vertical offset variants */
 .high {
     margin-bottom: clamp(60px, 8vw, 120px);
 }
