@@ -1,52 +1,144 @@
+.pageBanner {
+    position: relative;
+    width: 100%;
+    height: clamp(360px, 55vw, 620px);
+    display: grid;
+    grid-template-rows: auto 1fr;
+    align-items: start;
+    text-align: center;
+    overflow: hidden;
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/* Dark overlay */
+.pageBanner::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.52);
+    z-index: 0;
+}
+
+/* All direct children above the overlay */
+.pageBanner > * {
+    position: relative;
+    z-index: 1;
+}
+
+.pageBannerLogo {
+    width: clamp(60px, 8vw, 96px);
+    height: auto;
+    padding-top: clamp(24px, 4vw, 48px);
+    filter: drop-shadow(0 0 18px rgba(210, 170, 80, 0.45));
+    /* stays at top of grid row 1 */
+    align-self: start;
+    justify-self: center;
+}
+
+/* Wrapper that centers kicker + title in the remaining space */
+.pageBannerContent {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+.pageBannerKicker {
+    margin: 0 0 18px;
+    font-size: 15px;
+    letter-spacing: 0.28em;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: rgba(210, 170, 80, 0.9);
+    font-family: var(--font-body), "Gill Sans", Optima, system-ui, sans-serif;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+}
+
+.pageBannerKicker::before,
+.pageBannerKicker::after {
+    content: "";
+    display: block;
+    width: 48px;
+    height: 1px;
+    background: rgba(210, 170, 80, 0.6);
+}
+
+.pageBannerTitle {
+    margin: 0;
+    font-size: clamp(64px, 10vw, 124px);
+    line-height: 1.0;
+    letter-spacing: 0.04em;
+    font-weight: 400;
+    color: #ffffff;
+    font-family: var(--font-heading), "Cormorant Garamond", ui-serif, Georgia, "Times New Roman", serif;
+    text-shadow: 0 2px 32px rgba(0, 0, 0, 0.55);
+}
+
+/* ── Per-page background overrides ──────────────────────────
+   Add a modifier class to .pageBanner in each page's TSX:
+   <div className="pageBanner pageBanner--menu">
+   Then swap the url() below for each page's image.        */
+.pageBanner--about  { background-image: url("/images/home/img_3.webp"); }
+.pageBanner--menu   { background-image: url("/images/home/img_1.webp"); }
+.pageBanner--wine   { background-image: url("/images/wine/wine-barrel.webp"); }
+
+/* ── Rest of the page ─────────────────────────────────────── */
+
 .aboutWrap {
-  background: var(--color-secondary);
-  color: var(--color-text);
-  padding: clamp(56px, 8vw, 120px) 18px;
-  text-align: center;
+    background: var(--color-secondary);
+    color: var(--color-text);
+    padding: clamp(56px, 8vw, 120px) 18px;
+    text-align: center;
 }
 
 .aboutKicker {
-  margin: 0 0 18px;
-  font-size: 13px;
-  letter-spacing: 0.18em;
-  font-weight: 700;
-  text-transform: uppercase;
-  color: var(--color-hero-accent);
-  font-family: var(--font-body), system-ui, -apple-system, "Segoe UI", Arial, sans-serif;
+    margin: 0 0 18px;
+    font-size: 13px;
+    letter-spacing: 0.18em;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: var(--color-hero-accent);
+    font-family: var(--font-body), system-ui, -apple-system, "Segoe UI", Arial, sans-serif;
 }
 
 .aboutTitle {
-  margin: 0 auto 26px;
-  width: min(1100px, 100%);
-  font-size: clamp(46px, 7vw, 96px);
-  line-height: 1.02;
-  letter-spacing: 0.01em;
-  /* a “classic” look similar to the screenshot */
-  font-family: var(--font-heading), ui-serif, Georgia, "Times New Roman", Times, serif;
-  font-weight: 500;
+    margin: 0 auto 26px;
+    width: min(1100px, 100%);
+    font-size: clamp(46px, 7vw, 96px);
+    line-height: 1.02;
+    letter-spacing: 0.01em;
+    font-family: var(--font-heading), ui-serif, Georgia, "Times New Roman", Times, serif;
+    font-weight: 500;
 }
 
 .aboutBody {
-  width: min(1040px, 100%);
-  margin: 0 auto;
+    width: min(1040px, 100%);
+    margin: 0 auto;
 }
 
 .aboutBody p {
-  margin: 0 auto;
-  max-width: 110ch;
-  font-size: clamp(16px, 1.55vw, 20px);
-  line-height: 1.9;
-  color: rgba(44, 44, 44, 0.84);
-  font-family: var(--font-body), system-ui, -apple-system, "Segoe UI", Arial, sans-serif;
+    margin: 0 auto;
+    max-width: 110ch;
+    font-size: clamp(16px, 1.55vw, 20px);
+    line-height: 1.9;
+    color: rgba(44, 44, 44, 0.84);
+    font-family: var(--font-body), system-ui, -apple-system, "Segoe UI", Arial, sans-serif;
 }
 
 .aboutBody p + p {
-  margin-top: 32px;
+    margin-top: 32px;
 }
 
 @media (max-width: 700px) {
-  .aboutBody p + p {
-	margin-top: 22px;
-  }
+    .aboutBody p + p {
+        margin-top: 22px;
+    }
 }
-

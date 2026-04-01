@@ -1,4 +1,3 @@
-import HeroSection from "@/app/components/HeroSection";
 import styles from './MenuPageStyle.module.css';
 
 const menuSections = [
@@ -105,7 +104,18 @@ const menuSections = [
 export default function Menu() {
     return (
         <div className={styles.page}>
-            <HeroSection />
+            <div className="pageBanner pageBanner--menu">
+                <img
+                    src="/images/home/elysiumLogo.webp"
+                    alt="Elysium Logo"
+                    className="pageBannerLogo"
+                />
+                <div className="pageBannerContent">
+                    <p className="pageBannerKicker">FROM OUR KITCHEN</p>
+                    <h1 className="pageBannerTitle">Menu</h1>
+                </div>
+            </div>
+
             <main className={styles.main}>
                 {menuSections.map((section, i) => (
                     <section key={i} className={styles.section}>

@@ -1,11 +1,10 @@
-import HeroSection from "@/app/components/HeroSection";
 import Image from "next/image";
 import styles from "./WinePageStyle.module.css";
 
 const winesByGlass = {
     kicker: "REFRESH YOUR TASTE BUDS",
     title: "WINES BY GLASS",
-    image: "/images/wine/wines-by-glass.png",
+    image: "/images/wine/wines-by-glass.webp",
     categories: [
         {
             name: "SPARKLING WINES",
@@ -29,7 +28,7 @@ const wineCategories = [
         kicker: "WINES BY THE GLASS",
         title: "WHITE WINES",
         layout: "image-right",
-        image: "/images/wine/white-wines.png",
+        image: "/images/wine/white-wines.webp",
         items: [
             { name: "Beleca 0.15", desc: "Tomić, vinogorje Hvar, bogdanuša, pošip" },
             { name: "Chablis 0.15", desc: "Domaine Billaud-Simon, Burgundy, chardonnay" },
@@ -41,7 +40,7 @@ const wineCategories = [
         kicker: "WINES BY THE GLASS",
         title: "ROSE WINES",
         layout: "image-left",
-        image: "/images/wine/rose-wines.png",
+        image: "/images/wine/rose-wines.webp",
         items: [
             { name: "Opolo Tomić 0.15", desc: "Tomić, Hvarsko vinogorje, plavac mali, dry" },
             { name: "Minuty M 0.15", desc: "Château Minuty, Provence, grenache, dry" },
@@ -52,7 +51,7 @@ const wineCategories = [
         kicker: "WINES BY THE GLASS",
         title: "RED WINES",
         layout: "image-right",
-        image: "/images/wine/red-wines.png",
+        image: "/images/wine/red-wines.webp",
         items: [
             { name: "Plavac 0.15", desc: "Tomić, vinogorje Hvar, plavac mali, dry" },
             { name: "Karizma 0.15", desc: "Petrać, cabernet sauvignon 73%, merlot 27%, dry" },
@@ -65,10 +64,19 @@ const wineCategories = [
 export default function WinePage() {
     return (
         <div className={styles.page}>
-            <HeroSection />
-            <main className={styles.main}>
+            <div className="pageBanner pageBanner--wine">
+                <img
+                    src="/images/home/elysiumLogo.webp"
+                    alt="Elysium Logo"
+                    className="pageBannerLogo"
+                />
+                <div className="pageBannerContent">
+                    <p className="pageBannerKicker">CURATED SELECTIONS</p>
+                    <h1 className="pageBannerTitle">Wine</h1>
+                </div>
+            </div>
 
-                {/* Wines by Glass — image left, categories right */}
+            <main className={styles.main}>
                 <section className={styles.byGlass}>
                     <div className={styles.byGlassHeader}>
                         <p className={styles.kicker}>{winesByGlass.kicker}</p>
@@ -100,7 +108,6 @@ export default function WinePage() {
                     </div>
                 </section>
 
-                {/* White, Rose, Red wines */}
                 {wineCategories.map((cat, i) => (
                     <section key={i} className={styles.category}>
                         <div className={`${styles.categoryBody} ${cat.layout === 'image-right' ? styles.imageRight : styles.imageLeft}`}>
