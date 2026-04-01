@@ -15,7 +15,7 @@ export default function About() {
                 </div>
             </div>
 
-            <div style={{ paddingTop: "80px" }}>
+            <div>
                 <section className="aboutWrap" aria-label="About Restaurant Elysium">
                     <p className="aboutKicker">OUR STORY</p>
                     <h2 className="aboutTitle">Restaurant Elysium</h2>
