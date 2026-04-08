@@ -131,8 +131,8 @@ export default function HeroSection() {
                 <Image
                     src="/images/home/elysiumLogo.webp"
                     alt="Elysium logo"
-                    width={120}
-                    height={60}
+                    width={150}
+                    height={75}
                     className={styles.logo}
                     priority
                 />

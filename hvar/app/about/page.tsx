@@ -22,7 +22,7 @@ export default function About() {
 
                     <div className="aboutBody">
                         <p>
-                            Nestled in the heart of Hvar, <strong>Elysium</strong> is more than just a restaurant—it's a celebration of island life, Mediterranean flavors, and timeless moments. From the lively town square just steps away to the endless blue of the Adriatic coastline, every visit to Elysium is infused with the energy and charm of this unique island.
+                            Nestled in the heart of Hvar, <strong>Elysium</strong> is more than just a restaurant—it's a celebration of island life, Mediterranean flavors, and timeless moments. From the lively town square just steps away to the endless blue of the Adriatic coastline, every visit to <strong>Elysium</strong> is infused with the energy and charm of this unique island.
                         </p>
 
                         <p>
@@ -34,11 +34,11 @@ export default function About() {
                         </p>
 
                         <p>
-                            Beyond the food, Elysium is a place to slow down and savor life. Enjoy a glass of wine as the sun sets over the harbor, gather with friends for an evening of laughter, or simply let the warm ambiance carry you into the night. Our team is passionate about creating experiences that linger long after the last bite—moments where flavors, views, and company come together seamlessly.
+                            Beyond the food, <strong>Elysium</strong> is a place to slow down and savor life. Enjoy a glass of wine as the sun sets over the harbor, gather with friends for an evening of laughter, or simply let the warm ambiance carry you into the night. Our team is passionate about creating experiences that linger long after the last bite—moments where flavors, views, and company come together seamlessly.
                         </p>
 
                         <p>
-                            At Elysium, dining is not just about nourishment—it's about connection, joy, and discovery. Whether you are a first-time visitor or a returning friend, we invite you to explore the tastes, sights, and spirit of Hvar in every visit. Step inside, unwind, and let us make every meal a memory to cherish.
+                            At <strong>Elysium</strong>, dining is not just about nourishment—it's about connection, joy, and discovery. Whether you are a first-time visitor or a returning friend, we invite you to explore the tastes, sights, and spirit of Hvar in every visit. Step inside, unwind, and let us make every meal a memory to cherish.
                         </p>
                     </div>
                 </section>

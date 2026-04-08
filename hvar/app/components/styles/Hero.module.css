@@ -91,7 +91,7 @@
 .logo {
   object-fit: contain;
   filter: brightness(1.1) drop-shadow(0 2px 8px rgba(0,0,0,0.6));
-  max-height: 60px;
+  max-height: 74px;
   width: auto;
 }
 
@@ -313,7 +313,7 @@
   .arrow { width: 44px; height: 44px; }
   .counter { bottom: 24px; right: 20px; }
   .progressBar { bottom: 24px; }
-  .logo { max-height: 48px; }
+  .logo { max-height: 56px; }
   .logoWrap { top: 20px; }
 }
 

@@ -87,20 +87,6 @@
 
 .filmstripWrap {
     position: relative;
-    -webkit-mask-image: linear-gradient(
-            to right,
-            transparent 0%,
-            black 6%,
-            black 94%,
-            transparent 100%
-    );
-    mask-image: linear-gradient(
-            to right,
-            transparent 0%,
-            black 6%,
-            black 94%,
-            transparent 100%
-    );
 }
 
 .filmstrip {
@@ -110,22 +96,12 @@
 
 .track {
     display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     align-items: flex-end;
     gap: clamp(12px, 2vw, 24px);
-    width: max-content;
+    width: 100%;
     padding: 0 clamp(12px, 2vw, 24px);
-
-    animation: scroll 40s linear infinite;
-}
-
-
-.filmstrip:hover .track {
-    animation-play-state: paused;
-}
-
-@keyframes scroll {
-    0%   { transform: translateX(0); }
-    100% { transform: translateX(-25%); }
 }
 
 
@@ -183,9 +159,6 @@
 }
 
 @media (prefers-reduced-motion: reduce) {
-    .track {
-        animation: none;
-    }
 
     .image {
         transition: none;

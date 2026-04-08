@@ -87,7 +87,7 @@ a:hover {
 }
 
 .pageBannerLogo {
-  width: clamp(60px, 8vw, 96px);
+  width: clamp(68px, 9vw, 112px);
   height: auto;
   padding-top: clamp(24px, 4vw, 48px);
   filter: drop-shadow(0 0 18px rgba(210, 170, 80, 0.45));
