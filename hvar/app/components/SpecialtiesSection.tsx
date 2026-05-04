@@ -10,6 +10,7 @@ export default function SpecialtiesSection() {
                     alt="Lobster Image"
                     fill
                     sizes="100vw"
+                    priority
                     style={{ objectFit: 'cover' }}
                 />
             </div>

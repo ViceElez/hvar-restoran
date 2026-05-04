@@ -41,6 +41,7 @@ export default function SplitSection() {
                                     alt={slide.alt}
                                     fill
                                     sizes="400px"
+                                    priority
                                     className={styles.image}
                                 />
                             </div>

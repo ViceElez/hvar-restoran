@@ -92,6 +92,7 @@ export default function WinePage() {
                                 src={winesByGlass.image}
                                 alt="Wines by glass"
                                 fill
+                                priority
                                 style={{ objectFit: 'cover' }}
                             />
                         </div>
@@ -135,6 +136,7 @@ export default function WinePage() {
                                     src={cat.image}
                                     alt={cat.title}
                                     fill
+                                    priority
                                     style={{ objectFit: 'cover' }}
                                 />
                             </div>

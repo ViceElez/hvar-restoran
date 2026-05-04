@@ -119,7 +119,7 @@ export default function HeroSection() {
                             '--dir': direction === 'next' ? '1' : '-1',
                         } as React.CSSProperties}
                     >
-                        <Image src={s.src} alt={s.alt} fill sizes="100vw" priority={i === 0} className={styles.bgImg} />
+                        <Image src={s.src} alt={s.alt} fill sizes="100vw" priority className={styles.bgImg} />
                         {/* Dark vignette overlay */}
                         <div className={styles.vignette} />
                     </div>

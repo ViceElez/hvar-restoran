@@ -155,7 +155,7 @@ export default function Contact() {
                 background: '#e8eef3',
               }}
             >
-              <Image src={img.src} alt={img.alt} fill sizes="(max-width: 900px) 100vw, 50vw" style={{ objectFit: 'cover' }} />
+              <Image src={img.src} alt={img.alt} fill sizes="(max-width: 900px) 100vw, 50vw" priority style={{ objectFit: 'cover' }} />
             </div>
           )
         )}
