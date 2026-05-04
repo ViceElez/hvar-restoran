@@ -5,7 +5,7 @@ import SpecialtiesSection from './components/SpecialtiesSection';
 
 export default function Home() {
     return (
-        <main style={{ backgroundColor: 'var(--color-primary)'}}>
+        <main style={{ backgroundColor: '#14110f'}}>
             <HeroSection />
             <AboutSection />
             <SplitSection />
