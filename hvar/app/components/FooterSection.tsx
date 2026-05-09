@@ -42,9 +42,9 @@ export default function FooterSection() {
                     <p className={styles.text}>Marije Maričić 17</p>
                     <p className={styles.text}>21450 Hvar</p>
                     <p className={styles.text}>Croatia</p>
-                    <p className={styles.text}>+385 (0)21 742 999</p>
+                    <p className={styles.text}>091 727 8484</p>
                     <a
-                        href="https://www.google.com/maps/search/?api=1&query=Marije%20Mari%C4%8Di%C4%87%2017%2C%2021450%2C%20Hvar"
+                        href="https://www.google.com/maps/place/Elysium/@43.1728673,16.4399534,17z/data=!3m1!4b1!4m6!3m5!1s0x13358195cbb60c0f:0x2c68aa5be4b26cc8!8m2!3d43.1728673!4d16.4425283!16s%2Fg%2F11z9q5vmjn?entry=ttu&g_ep=EgoyMDI2MDUwNi4wIKXMDSoASAFQAw%3D%3D"
                         className={styles.mapLink}
                         target="_blank"
                         rel="noopener noreferrer"

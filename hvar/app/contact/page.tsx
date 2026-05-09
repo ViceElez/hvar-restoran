@@ -63,25 +63,25 @@ export default function Contact() {
         }}
       >
         {[
-          {
-            title: 'Location',
-            lines: ['Marije Maričić 17, 21450, Hvar', 'Croatia'],
-            action: {
-              label: 'View on map',
-              href: 'https://www.google.com/maps/search/?api=1&query=Marije%20Mari%C4%8Di%C4%87%2017%2C%2021450%2C%20Hvar',
-            },
-          },
-          {
-            title: 'Phone',
-            lines: ['+385 (0)21 742 999'],
-            action: { label: 'Call now', href: 'tel:+38521742999' },
-          },
-          {
-            title: 'Email',
-            lines: ['restaurantelysium.hvar@gmail.com'],
-            action: { label: 'Send email', href: 'mailto:restaurantelysium.hvar@gmail.com' },
-          },
-        ].map((card) => (
+           {
+             title: 'Location',
+             lines: ['Marije Maričić 17, 21450, Hvar', 'Croatia'],
+             action: {
+               label: 'View on map',
+               href: 'https://www.google.com/maps/place/Elysium/@43.1728673,16.4399534,17z/data=!3m1!4b1!4m6!3m5!1s0x13358195cbb60c0f:0x2c68aa5be4b26cc8!8m2!3d43.1728673!4d16.4425283!16s%2Fg%2F11z9q5vmjn?entry=ttu&g_ep=EgoyMDI2MDUwNi4wIKXMDSoASAFQAw%3D%3D',
+             },
+           },
+           {
+             title: 'Phone',
+             lines: ['091 727 8484'],
+             action: { label: 'Call now', href: 'tel:0917278484' },
+           },
+           {
+             title: 'Email',
+             lines: ['elysium.hvar@gmail.com'],
+             action: { label: 'Send email', href: 'mailto:elysium.hvar@gmail.com' },
+           },
+         ].map((card) => (
           <div
             key={card.title}
             style={{
