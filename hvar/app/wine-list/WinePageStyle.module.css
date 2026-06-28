@@ -67,7 +67,7 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: clamp(40px, 6vw, 100px);
-    align-items: start;
+    align-items: center; 
 }
 
 .byGlassImage {

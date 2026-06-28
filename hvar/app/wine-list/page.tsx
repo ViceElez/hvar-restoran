@@ -1,62 +1,150 @@
 import Image from "next/image";
 import styles from "./WinePageStyle.module.css";
 
+// Wines available by the glass, grouped as in the PDF
 const winesByGlass = {
     kicker: "REFRESH YOUR TASTE BUDS",
     title: "WINES BY GLASS",
     image: "/images/wine/wines-by-glass.webp",
     categories: [
         {
-            name: "SPARKLING WINES",
+            name: "CROATIAN SPARKLING WINE",
             items: [
-                { name: "Bosco Di Gica Adami 0.1", desc: "" },
-                { name: "Bianca Vigna Spumante Rose 0.1", desc: "" },
+                { name: "Tomac Millenium", price: "8 €" },
+                { name: "Šember Rosé", price: "8 €" },
             ]
         },
         {
-            name: "CHAMPAGNE",
+            name: "WHITE WINES",
             items: [
-                { name: "Billecart Salmon Brut Reserva 0.1", desc: "" },
-                { name: "Moet & Chandon Brut Rose 0.1", desc: "" },
+                { name: "Carić Bogdanuša", price: "5 €" },
+                { name: "Puhelek Sauvignon Blanc", price: "6 €" },
+                { name: "Coletti Pinot Grigio", price: "7 €" },
+                { name: "Hvar Hills Pošip", price: "8 €" },
+            ]
+        },
+        {
+            name: "ROSÉ WINES",
+            items: [
+                { name: "Bire Rosé", price: "7 €" },
+            ]
+        },
+        {
+            name: "RED WINES",
+            items: [
+                { name: "Sontacchi Crni Pinot", price: "6 €" },
+                { name: "Grabovac Merlot", price: "7 €" },
+                { name: "Hvar Hills Plavac Maior Riserva", price: "8 €" },
+            ]
+        },
+        {
+            name: "SWEET WINES",
+            items: [
+                { name: "Tomić Hektorović Prošek", price: "8 €" },
             ]
         },
     ]
 };
 
+// Full wine list grouped exactly as in the PDF, including bottle/glass/measure info
 const wineCategories = [
     {
-        kicker: "WINES BY THE GLASS",
-        title: "WHITE WINES",
+        kicker: "ELYSIUM WINE LIST",
+        title: "CHAMPAGNE",
         layout: "image-right",
-        image: "/images/wine/white-wines.webp",
+        image: "/images/wine/champagne.webp",
         items: [
-            { name: "Beleca 0.15", desc: "Tomić, vinogorje Hvar, bogdanuša, pošip" },
-            { name: "Chablis 0.15", desc: "Domaine Billaud-Simon, Burgundy, chardonnay" },
-            { name: "Bura Pošip 0.15", desc: "Toreta, Korčula, pošip, dry" },
-            { name: "Sauvignon Blanc 0.15", desc: "Cloudy Bay, Marlborough, New Zealand" },
+            { name: "Veuve Clicquot Brut", desc: "Bottle — 95 €" },
+            { name: "Ruinart Brut R", desc: "Bottle — 120 €" },
+        ]
+    },
+    {
+        kicker: "ELYSIUM WINE LIST",
+        title: "CROATIAN SPARKLING WINE",
+        layout: "image-left",
+        image: "/images/wine/croatian-sparkling.webp",
+        items: [
+            { name: "Tomac Millenium", desc: "Bottle 48 € · Glass 8 € · 0,10 l" },
+            { name: "Šember Rosé", desc: "Bottle 48 € · Glass 8 € · 0,10 l" },
+        ]
+    },
+    {
+        kicker: "ELYSIUM WINE LIST",
+        title: "PROSECCO",
+        layout: "image-right",
+        image: "/images/wine/prosecco.webp",
+        items: [
+            { name: "Prosecco Valdobbiadene Villa Sandi Millesimato D.O.C.G.", desc: "Bottle — 38 €" },
         ]
     },
     {
         kicker: "WINES BY THE GLASS",
-        title: "ROSE WINES",
+        title: "WHITE WINES",
         layout: "image-left",
+        image: "/images/wine/white-wines.webp",
+        items: [
+            { name: "Carić Bogdanuša", desc: "Bottle 28 € · Glass 5 € · 0,125 l" },
+            { name: "Puhelek Sauvignon Blanc", desc: "Bottle 32 € · Glass 6 € · 0,125 l" },
+            { name: "Erdoro Blend One", desc: "Bottle — 33 €" },
+            { name: "Coletti Pinot Grigio", desc: "Bottle 34 € · Glass 7 € · 0,125 l" },
+            { name: "Hvar Hills Pošip", desc: "Bottle 45 € · Glass 8 € · 0,125 l" },
+            { name: "Luka Krajančić Intrada", desc: "Bottle — 48 €" },
+            { name: "Zure Grk", desc: "Bottle — 68 €" },
+            { name: "Knebu Chardonnay", desc: "Bottle — 75 €" },
+        ]
+    },
+    {
+        kicker: "WINES BY THE GLASS",
+        title: "ROSÉ WINES",
+        layout: "image-right",
         image: "/images/wine/rose-wines.webp",
         items: [
-            { name: "Opolo Tomić 0.15", desc: "Tomić, Hvarsko vinogorje, plavac mali, dry" },
-            { name: "Minuty M 0.15", desc: "Château Minuty, Provence, grenache, dry" },
-            { name: "Whispering Angel 0.15", desc: "Château d'Esclans, Provence, grenache, dry" },
+            { name: "Bire Rosé", desc: "Bottle 36 € · Glass 7 € · 0,125 l" },
+            { name: "Markus Rosé", desc: "Bottle — 45 €" },
+            { name: "Whispering Angel", desc: "Bottle — 65 €" },
         ]
     },
     {
         kicker: "WINES BY THE GLASS",
         title: "RED WINES",
-        layout: "image-right",
+        layout: "image-left",
         image: "/images/wine/red-wines.webp",
         items: [
-            { name: "Plavac 0.15", desc: "Tomić, vinogorje Hvar, plavac mali, dry" },
-            { name: "Karizma 0.15", desc: "Petrać, cabernet sauvignon 73%, merlot 27%, dry" },
-            { name: "Dingač 0.15", desc: "Matuško, Pelješac, plavac mali, dry" },
-            { name: "Barolo 0.15", desc: "Marchesi di Barolo, Piedmont, nebbiolo, dry" },
+            { name: "Sontacchi Crni Pinot", desc: "Bottle 32 € · Glass 6 € · 0,125 l" },
+            { name: "Grabovac Merlot", desc: "Bottle 36 € · Glass 7 € · 0,125 l" },
+            { name: "Hvar Hills Plavac Maior Riserva", desc: "Bottle 45 € · Glass 8 € · 0,125 l" },
+            { name: "Galić Crno 9", desc: "Bottle — 54 €" },
+            { name: "Bire Plavac Mali", desc: "Bottle — 54 €" },
+            { name: "Grabovac Syrah", desc: "Bottle — 65 €" },
+        ]
+    },
+    {
+        kicker: "ELYSIUM WINE LIST",
+        title: "SWEET WINES",
+        layout: "image-right",
+        image: "/images/wine/sweet-wines.webp",
+        items: [
+            { name: "Tomić Hektorović Prošek", desc: "Bottle 72 € · Glass 8 € · 0,075 l" },
+        ]
+    },
+    {
+        kicker: "PODERI LUIGI EINAUDI — PIEDMONT SELECTION",
+        title: "WHITE WINE",
+        layout: "image-left",
+        image: "/images/wine/einaudi-white.webp",
+        items: [
+            { name: "Roero Arneis 2025 \u201cDonna Ida\u201d", desc: "Bottle — 42 €" },
+        ]
+    },
+    {
+        kicker: "PODERI LUIGI EINAUDI — PIEDMONT SELECTION",
+        title: "RED WINES",
+        layout: "image-right",
+        image: "/images/wine/einaudi-red.webp",
+        items: [
+            { name: "Dogliani 2024 D.O.C.G.", desc: "Bottle — 42 €" },
+            { name: "Langhe Nebbiolo 2024 D.O.C.", desc: "Bottle — 58 €" },
+            { name: "Barolo D.O.C.G. 2021 \u201cLudo\u201d", desc: "Bottle — 110 €" },
         ]
     },
 ];
@@ -93,7 +181,7 @@ export default function WinePage() {
                                 alt="Wines by glass"
                                 fill
                                 priority
-                                style={{ objectFit: 'cover' }}
+                                style={{ objectFit: 'contain' }}
                             />
                         </div>
                         <div className={styles.byGlassCategories}>
@@ -101,7 +189,10 @@ export default function WinePage() {
                                 <div key={i} className={styles.byGlassCategory}>
                                     <h3 className={styles.categoryName}>{cat.name}</h3>
                                     {cat.items.map((item, j) => (
-                                        <p key={j} className={styles.byGlassItem}>{item.name}</p>
+                                        <p key={j} className={styles.byGlassItem}>
+                                            {item.name}
+                                            <span className={styles.byGlassPrice}> — {item.price}</span>
+                                        </p>
                                     ))}
                                 </div>
                             ))}
@@ -137,7 +228,7 @@ export default function WinePage() {
                                     alt={cat.title}
                                     fill
                                     priority
-                                    style={{ objectFit: 'cover' }}
+                                    style={{ objectFit: 'contain' }}
                                 />
                             </div>
 
