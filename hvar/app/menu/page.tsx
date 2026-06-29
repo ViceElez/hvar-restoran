@@ -5,76 +5,74 @@ const menuSections = [
         kicker: "THE FIRST CUT",
         title: "COLD STARTERS",
         items: [
-            { name: "THE FIRST CUT", price: "39 €", desc: "Top quality selection of Adriatic cold starters / a refined introduction to the chef's vision" },
-            { name: "DALMATIAN PROSCIUTTO", price: "19 €", desc: "Dry-aged Dalmatian prosciutto / olives / pickled onions / cherry tomatoes" },
-            { name: "BURRATA & TRUFFLE", price: "19 €", desc: "Creamy burrata / cherry tomatoes / 25-year aged balsamic / fresh truffle" },
-            { name: "SHRIMP COCKTAIL", price: "18 €", desc: "Poached Adriatic shrimp / house cocktail sauce / citrus notes", badge: "RECOMMENDATION" },
-            { name: "BLACK BASS CARPACCIO", price: "24 €", desc: "Thinly sliced black bass / citrus textures / fresh herbs / beetroot essence" },
-            { name: "BEEF CARPACCIO", price: "26 €", desc: "Beef tenderloin / Grana Padano / pine nuts / rocket / lemon dressing / olive oil" },
+            { name: "THE FIRST IMPRESSION", price: "", desc: "Adriatic tasting selection / shrimp pâté / tuna tartare / beetroot tartare / seafood delicacies" },
+            { name: "DALMATIAN PROSCIUTTO", price: "", desc: "Dry-aged Dalmatian prosciutto / olives / pickled onions / cherry tomatoes" },
+            { name: "BURRATA & TRUFFLE", price: "", desc: "Creamy burrata / cherry tomatoes / 25-year aged balsamic / fresh truffle" },
+            { name: "TUNA CEVICHE", price: "", desc: "Tuna / citrus / garlic / parsley / apple / capers / chili" },
+            { name: "OCTOPUS SALAD", price: "", desc: "Tender Adriatic octopus / cherry tomatoes / olives / red onion / capers / parsley" },
+            { name: "BLACK BASS CARPACCIO", price: "", desc: "Hama / white fish / citrus dressing / beetroot essence / olive oil" },
+            { name: "SMOKED BEEF TARTARE", price: "", desc: "Beef tenderloin / house mayonnaise / capers / pickles / onion / garlic / parsley / Worcestershire / cognac" },
         ]
     },
     {
         kicker: "FROM THE KITCHEN",
         title: "SOUPS",
         items: [
-            { name: "SOUP OF THE DAY", price: "10 €", desc: "Daily seasonal soup / inspired by the Adriatic market" },
-            { name: "GAZPACHO", price: "12 €", desc: "Chilled gazpacho of four cherry tomato varieties / olive oil" },
+            { name: "SOUP OF THE DAY", price: "", desc: "Daily seasonal soup / inspired by the Adriatic market" },
+            { name: "GAZPACHO", price: "", desc: "Chilled gazpacho of four cherry tomato varieties / olive oil" },
         ]
     },
     {
         kicker: "FROM THE KITCHEN",
         title: "WARM APPETIZERS",
         items: [
-            { name: "EMBERED FISH PACCHERI", price: "35 €", desc: "Paccheri / charcoal-finished fish / shellfish reduction / cherry tomatoes" },
-            { name: "BLACK RISOTTO", price: "24 €", desc: "Aged rice / Adriatic cuttlefish / squid ink / olive oil" },
-            { name: "CHAMPAGNE & SAFFRON RISOTTO", price: "42 €", desc: "Aged rice / Champagne / saffron / seared scallops" },
-            { name: "VODKA AFFAIR", price: "29 €", desc: "Paccheri / tomato / vodka / aged cheese / burrata" },
+            { name: "EMBERED FISH PACCHERI", price: "", desc: "Paccheri / charcoal-finished fish / shellfish reduction / cherry tomatoes" },
+            { name: "BLACK RISOTTO", price: "", desc: "Aged rice / Adriatic cuttlefish / squid ink / Parmesan / parsley" },
+            { name: "CHAMPAGNE & SAFFRON RISOTTO", price: "", desc: "Aged rice / Champagne / saffron / seared scallops / leek" },
+            { name: "HOMEMADE PASTA \u201cNON PLUS ULTRA\u201d", price: "", desc: "Blue crab reduction / dried bottarga / sea hare caviar" },
         ]
     },
     {
         kicker: "FROM THE SEA",
         title: "FISH · CRUSTACEANS · SHELLFISH",
         items: [
-            { name: "POOR MAN'S LOBSTER", price: "36 €", desc: "Monkfish steak wrapped in leek / light béarnaise sauce / red grapefruit" },
-            { name: "ADRIATIC SQUID", price: "27 €", desc: "Char-grilled Adriatic squid / olive oil / herbs" },
-            { name: "THE FIRST PEARL", price: "6 € / pc", desc: "Fresh oysters / lemon" },
-            { name: "BAKED OYSTERS", price: "6 € / pc", desc: "Herb butter / sea aromas" },
-            { name: "ADRIATIC SHELLFISH SELECTION", price: "35 €", desc: "Mussels / cockles / clams" },
-            { name: "SCAMPI BUZARA", price: "42 €", desc: "Adriatic scampi / white wine / tomato" },
-            { name: "GRILLED SCAMPI", price: "42 €", desc: "Adriatic scampi / olive oil / sea salt" },
-            { name: "TOP QUALITY ADRIATIC FISH", price: "98 € / kg", desc: "Prepared upon guest's preference: brudet · gregada · grill" },
-            { name: "ELYSIUM SEA PLATE", price: "158 €", desc: "White fish / scampi / squid / seasonal side dishes", badge: "CHEF'S RECOMMENDATION" },
-            { name: "THE GOLDEN CATCH", price: "190 € / kg", desc: "Adriatic lobster / olive oil" },
-            { name: "LOBSTER GONE WILD", price: "220 € / kg", desc: "Lobster buzara style / cognac / tomato sauce / spaghetti" },
+            { name: "POOR MAN'S LOBSTER", price: "", desc: "Monkfish steak wrapped in leek / light béarnaise sauce / red grapefruit / light salad" },
+            { name: "ADRIATIC SQUID", price: "", desc: "Adriatic squid / olive oil / garlic / parsley / lemon" },
+            { name: "THE FIRST PEARL", price: "", desc: "Fresh oysters / lemon / microgreens" },
+            { name: "OPEN-FIRE OYSTERS", price: "", desc: "Shiro miso butter / lime / sesame / microgreens" },
+            { name: "ADRIATIC SHELLFISH SELECTION", price: "", desc: "Mussels / cockles / clams / garlic / parsley / breadcrumbs" },
+            { name: "SCAMPI BUZARA", price: "", desc: "Adriatic scampi / white wine / tomato sauce / stock / garlic / parsley" },
+            { name: "GRILLED SCAMPI", price: "", desc: "Adriatic scampi / olive oil / sea salt / lemon / parsley" },
+            { name: "TOP QUALITY ADRIATIC FISH", price: "", desc: "Prepared upon guest's preference: brudet · gregada · grill" },
+            { name: "THE GOLDEN CATCH", price: "", desc: "Adriatic lobster / olive oil / lemon / garlic / parsley" },
+            { name: "LOBSTER GONE WILD", price: "", desc: "Lobster buzara style / cognac / tomato sauce / spaghetti" },
         ]
     },
     {
         kicker: "FROM THE LAND",
         title: "MEAT",
         items: [
-            { name: "VELVET VEAL ROLL", price: "55 €", desc: "Slow-roasted veal roulade / mustard / polenta / marinated red cabbage / rich demi-glace" },
-            { name: "CHARRED RIBEYE", price: "46 €", desc: "Grilled ribeye / garlic confit / burnt onion purée / jus" },
-            { name: "GLAZED LAMB SHANK", price: "60 €", desc: "Slow-braised lamb shank / honey glaze / pickled vegetables / jus" },
-        ]
-    },
-    {
-        kicker: "FRESH & LIGHT",
-        title: "SALADS",
-        items: [
-            { name: "BEETROOT & GOAT CHEESE SALAD", price: "16 €", desc: "Roasted beetroot / goat cheese / arugula / walnuts / balsamic" },
-            { name: "ELYSIUM SALAD", price: "19 €", desc: "Salmon / avocado / mixed greens / cherry tomatoes / lemon dressing" },
+            { name: "VELVET VEAL ROLL", price: "", desc: "Slow-roasted veal roulade / mustard / polenta / marinated red cabbage / rich demi-glace" },
+            { name: "CHARRED RIBEYE", price: "", desc: "Ribeye / garlic confit / sweet potato purée / burnt onion purée / rich demi-glace" },
+            { name: "FREESTYLE PAŠTICADA", price: "", desc: "Beef / pašticada sauce / gnocchi or homemade pasta / root vegetables / prunes / pancetta" },
+            { name: "CRIMSON DUCK", price: "", desc: "Duck breast / raspberry jus / celery root purée" },
         ]
     },
     {
         kicker: "ON THE SIDE",
         title: "SIDE DISHES",
         items: [
-            { name: "TOMATO CARPACCIO", price: "10 €", desc: "Gazpacho / 25-year aged balsamico / olive oil" },
-            { name: "GRILLED VEGETABLES", price: "8 €", desc: "" },
-            { name: "TRUFFLE MASHED POTATOES", price: "12 €", desc: "Creamy potatoes / truffle aroma" },
-            { name: "FRENCH FRIES", price: "6 €", desc: "" },
-            { name: "SEASONAL SALAD", price: "7 €", desc: "" },
-            { name: "GOAT CHEESE SELECTION", price: "", desc: "Artisan goat cheeses / fresh & aged / seasonal accompaniments" },
+            { name: "TOMATO CARPACCIO", price: "", desc: "Tomatoes / gazpacho / 25-year aged balsamic / olive oil / microgreens" },
+            { name: "GRILLED VEGETABLES", price: "", desc: "Seasonal vegetables / olive oil / garlic / parsley" },
+            { name: "TRUFFLE MASHED POTATOES", price: "", desc: "Potatoes / butter / milk or cream / tartufata" },
+            { name: "SEASONAL SALAD", price: "", desc: "Seasonal salad mix / olive oil / vinegar or lemon" },
+        ]
+    },
+    {
+        kicker: "ARTISAN SELECTION",
+        title: "CHEESE SELECTION",
+        items: [
+            { name: "GOAT CHEESE SELECTION", price: "", desc: "Artisan goat cheeses / fresh and aged / seasonal accompaniments" },
             { name: "SHEEP CHEESE SELECTION", price: "", desc: "Artisan sheep cheeses / aged selection / seasonal accompaniments" },
         ]
     },
@@ -82,21 +80,8 @@ const menuSections = [
         kicker: "TO FINISH",
         title: "DESSERTS",
         items: [
-            { name: "CHEF'S SWEET SELECTION", price: "12 €", desc: "Daily creation" },
-            { name: "FRESH FRUIT", price: "14 €", desc: "" },
-        ]
-    },
-    {
-        kicker: "MIDDAY DINING",
-        title: "ELYSIUM LUNCH",
-        items: [
-            { name: "ELYSIUM LUNCH MENU", price: "39 €", desc: "Choose any two dishes from the selection below / dessert of the day / still water & coffee included" },
-            { name: "SHRIMP COCKTAIL", price: "", desc: "Poached shrimp / classic cocktail sauce / lemon" },
-            { name: "BURRATA", price: "", desc: "Creamy burrata / cherry tomatoes / 25-year aged balsamic" },
-            { name: "BLACK BASS CARPACCIO", price: "", desc: "Black bass / lemon gel / citrus vinaigrette / olive oil" },
-            { name: "PACCHERI ALLA VITTORIO", price: "", desc: "Paccheri / datterino / piccadilly / yellow cherry / cherry tomatoes / butter / Parmigiano Reggiano" },
-            { name: "BLACK RISOTTO", price: "", desc: "Aged rice / Adriatic cuttlefish / olive oil" },
-            { name: "GRILLED SQUID", price: "", desc: "Char-grilled squid / olive oil / parsley / lemon / salad" },
+            { name: "CHEF'S SWEET SELECTION", price: "", desc: "Daily creation" },
+            { name: "FRESH FRUIT", price: "", desc: "Seasonal fruit / melted chocolate / whipped cream" },
         ]
     },
 ];
