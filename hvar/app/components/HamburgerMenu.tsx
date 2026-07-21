@@ -197,8 +197,7 @@ export default function HamburgerMenu({
             })}
 
             <div className={styles.smallLinks}>
-              <a className={styles.smallLink} href="https://www.facebook.com/mirko.mucic.7?locale=hr_HR" target="_blank" rel="noopener noreferrer">Facebook</a>
-              <a className={styles.smallLink} href="https://www.instagram.com/mirko_mucic/" target="_blank" rel="noopener noreferrer">Instagram</a>
+              <a className={styles.smallLink} href="https://www.instagram.com/elysium.hvar/" target="_blank" rel="noopener noreferrer">Instagram</a>
             </div>
           </nav>
 
