@@ -142,7 +142,7 @@ export default function Contact() {
           alignItems: 'stretch',
         }}
       >
-        {[{ src: '/images/home/img.webp', alt: 'Restaurant Table Image' }, { src: '/images/home/img_2.webp', alt: 'Hvar Riva Image' }].map(
+        {[{ src: '/images/home/img.webp', alt: 'Konoba Table Image' }, { src: '/images/home/img_2.webp', alt: 'Hvar Riva Image' }].map(
           (img) => (
             <div
               key={img.src}

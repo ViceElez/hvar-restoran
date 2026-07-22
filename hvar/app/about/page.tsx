@@ -16,13 +16,13 @@ export default function About() {
             </div>
 
             <div>
-                <section className="aboutWrap" aria-label="About Restaurant Elysium">
+                <section className="aboutWrap" aria-label="About Konoba Elysium">
                     <p className="aboutKicker">OUR STORY</p>
-                    <h2 className="aboutTitle">Restaurant Elysium</h2>
+                    <h2 className="aboutTitle">Konoba Elysium</h2>
 
                     <div className="aboutBody">
                         <p>
-                            Nestled in the heart of Hvar, <strong>Elysium</strong> is more than just a restaurant—it's a celebration of island life, Mediterranean flavors, and timeless moments. From the lively town square just steps away to the endless blue of the Adriatic coastline, every visit to <strong>Elysium</strong> is infused with the energy and charm of this unique island.
+                            Nestled in the heart of Hvar, <strong>Elysium</strong> is more than just a konoba—it's a celebration of island life, Mediterranean flavors, and timeless moments. From the lively town square just steps away to the endless blue of the Adriatic coastline, every visit to <strong>Elysium</strong> is infused with the energy and charm of this unique island.
                         </p>
 
                         <p>

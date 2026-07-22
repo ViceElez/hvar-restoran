@@ -17,7 +17,7 @@ type Slide = {
 const SLIDES: Slide[] = [
     {
         src: '/images/home/img.webp',
-        alt: 'Restaurant Table',
+        alt: 'Konoba Table',
         eyebrow: 'EXPERIENCE',
         title: 'HEART OF\nHVAR',
         subtitle: 'Discover a gastronomic experience that\ntransports you to the heart of Hvar.',

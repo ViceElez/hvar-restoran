@@ -17,7 +17,7 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   title: "Elysium",
-  description: "Restaurant In The Heart Of Hvar",
+  description: "Konoba In The Heart Of Hvar",
 };
 
 export default function RootLayout({

@@ -7,7 +7,7 @@ export default function AboutSection() {
             <div className={styles.bgLogo} aria-hidden="true" />
 
             <div className={styles.inner}>
-                <p className={styles.kicker}>ABOUT THE RESTAURANT</p>
+                <p className={styles.kicker}>ABOUT THE KONOBA</p>
 
                 <h2 className={styles.title}>OUR STORY</h2>
 
