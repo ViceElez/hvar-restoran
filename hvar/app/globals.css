@@ -87,7 +87,7 @@ a:hover {
 }
 
 .pageBannerLogo {
-  width: clamp(68px, 9vw, 112px);
+  width: clamp(68px, 1vw, 112px);
   height: auto;
   padding-top: clamp(24px, 4vw, 48px);
   filter: drop-shadow(0 0 18px rgba(210, 170, 80, 0.45));
@@ -140,8 +140,11 @@ a:hover {
   text-shadow: 0 2px 32px rgba(0, 0, 0, 0.55);
 }
 
-.pageBanner--about  { background-image: url("/images/home/img_3.webp"); }
-.pageBanner--menu   { background-image: url("/images/home/img_1.webp"); }
+.pageBanner--about  {
+  background-image: url("/images/home/stolVanka.webp");
+
+}
+.pageBanner--menu   { background-image: url("/images/home/prsut.webp"); }
 .pageBanner--wine   { background-image: url("/images/wine/wine-barrel.webp"); }
 
 
