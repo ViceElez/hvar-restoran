@@ -6,7 +6,7 @@ export default function SpecialtiesSection() {
         <section className={styles.section}>
             <div className={styles.imageWrapper}>
                 <Image
-                    src="/images/home/img_1.webp"
+                    src="/images/home/img2.webp"
                     alt="Lobster Image"
                     fill
                     sizes="100vw"

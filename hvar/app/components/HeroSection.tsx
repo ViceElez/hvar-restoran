@@ -20,7 +20,7 @@ const SLIDES: Slide[] = [
         alt: 'Konoba Table',
         eyebrow: 'EXPERIENCE',
         title: 'HEART OF\nHVAR',
-        subtitle: 'Discover a gastronomic experience that\ntransports you to the heart of Hvar.',
+        subtitle: 'Hand-selected seafood prepared with\ncenturies of coastal tradition.',
         cta: 'EXPLORE MENU',
         ctaHref: '/menu',
     },
@@ -29,7 +29,7 @@ const SLIDES: Slide[] = [
         alt: 'Lobster',
         eyebrow: 'CATCH OF THE DAY',
         title: 'FRESH FROM\nTHE ADRIATIC',
-        subtitle: 'Hand-selected seafood prepared with\ncenturies of coastal tradition.',
+        subtitle: 'Discover a gastronomic experience that\ntransports you to the heart of Hvar.',
         cta: 'VIEW SEAFOOD',
         ctaHref: '/menu',
     },
@@ -131,8 +131,8 @@ export default function HeroSection() {
                 <Image
                     src="/images/home/elysiumLogo.webp"
                     alt="Elysium logo"
-                    width={150}
-                    height={75}
+                    width={220}
+                    height={110}
                     className={styles.logo}
                     priority
                 />

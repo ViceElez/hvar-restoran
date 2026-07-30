@@ -6,8 +6,8 @@ import styles from './styles/Split.module.css';
 
 const baseSlides = [
     { src: '/images/home/foodImage.webp', alt: 'Hvar Riva Image', aspectClass: 'tall', offset: 'low' },
-    { src: '/images/home/img_1.webp', alt: 'Lobster Image', aspectClass: 'wide', offset: 'high' },
-    { src: '/images/home/img.webp', alt: 'Konoba Table Image', aspectClass: 'tall', offset: 'mid' },
+    { src: '/images/home/table.webp', alt: 'Lobster Image', aspectClass: 'wide', offset: 'high' },
+    { src: '/images/home/bread.webp', alt: 'Konoba Table Image', aspectClass: 'tall', offset: 'mid' },
 ];
 
 const slides = baseSlides;

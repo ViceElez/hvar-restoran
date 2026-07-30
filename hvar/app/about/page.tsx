@@ -34,7 +34,7 @@ export default function About() {
                         </p>
 
                         <p>
-                            Beyond the food, <strong>Elysium</strong> is a place to slow down and savor life. Enjoy a glass of wine as the sun sets over the harbor, gather with friends for an evening of laughter, or simply let the warm ambiance carry you into the night. Our team is passionate about creating experiences that linger long after the last bite—moments where flavors, views, and company come together seamlessly.
+                            Beyond the food, <strong>Elysium</strong> is a place to slow down and savor life. Enjoy a glass of wine in our warm, stone-walled konoba, gather with friends for an evening of laughter, or simply let the relaxed ambiance carry you into the night. Our team is passionate about creating experiences that linger long after the last bite—moments where flavors, atmosphere, and company come together seamlessly.
                         </p>
 
                         <p>
