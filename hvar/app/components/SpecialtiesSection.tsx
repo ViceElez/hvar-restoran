@@ -19,20 +19,24 @@ export default function SpecialtiesSection() {
                 <h3 className={styles.kicker}>RECOMMENDATIONS</h3>
                 <h2 className={styles.title}>ELYSIUM SPECIALTIES</h2>
                 <div className={styles.item}>
-                    <h4 className={styles.name}>Elysium Sea Plate</h4>
-                    <p className={styles.desc}>White fish / scampi / squid / seasonal side dishes</p>
+                    <h4 className={styles.name}>Poor Man&apos;s Lobster</h4>
+                    <p className={styles.desc}>Monkfish steak wrapped in leek / light béarnaise sauce / red grapefruit / light salad</p>
                 </div>
                 <div className={styles.item}>
-                    <h4 className={styles.name}>Lobster Gone Wild</h4>
-                    <p className={styles.desc}>Lobster buzara style / cognac / tomato sauce / spaghetti</p>
+                    <h4 className={styles.name}>The First Impression</h4>
+                    <p className={styles.desc}>Adriatic tasting selection / shrimp pâté / tuna tartare / beetroot tartare / seafood delicacies</p>
                 </div>
                 <div className={styles.item}>
-                    <h4 className={styles.name}>Champagne & Saffron Risotto</h4>
-                    <p className={styles.desc}>Aged rice / Champagne / saffron / seared scallops</p>
+                    <h4 className={styles.name}>Embered Fish Paccheri</h4>
+                    <p className={styles.desc}>Paccheri / charcoal-finished fish / shellfish reduction / cherry tomatoes</p>
                 </div>
                 <div className={styles.item}>
-                    <h4 className={styles.name}>Glazed Lamb Shank</h4>
-                    <p className={styles.desc}>Slow-braised lamb shank / honey glaze / pickled vegetables / jus</p>
+                    <h4 className={styles.name}>Velvet Veal Roll</h4>
+                    <p className={styles.desc}>Slow-roasted veal roulade / mustard / polenta / marinated red cabbage / rich demi-glace</p>
+                </div>
+                <div className={styles.item}>
+                    <h4 className={styles.name}>Contemporary Pašticada</h4>
+                    <p className={styles.desc}>Beef / pašticada sauce / gnocchi or homemade pasta / root vegetables / prunes / pancetta</p>
                 </div>
             </div>
         </section>
