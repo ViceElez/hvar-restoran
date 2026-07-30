@@ -17,10 +17,10 @@ const winesByGlass = {
         {
             name: "WHITE WINES",
             items: [
-                { name: "Carić Bogdanuša", price: "5 €" },
-                { name: "Puhelek Sauvignon Blanc", price: "6 €" },
+                { name: "Carić Bogdanuša", price: "6 €" },
+                { name: "Puhelek Sauvignon Blanc", price: "7 €" },
                 { name: "Coletti Pinot Grigio", price: "7 €" },
-                { name: "Hvar Hills Pošip", price: "8 €" },
+                { name: "Hvar Hills Pošip", price: "9 €" },
             ]
         },
         {
@@ -83,13 +83,13 @@ const wineCategories = [
         layout: "image-left",
         image: "/images/wine/white-wines.webp",
         items: [
-            { name: "Carić Bogdanuša", desc: "Bottle 28 € · Glass 5 € · 0,125 l" },
-            { name: "Puhelek Sauvignon Blanc", desc: "Bottle 32 € · Glass 6 € · 0,125 l" },
+            { name: "Carić Bogdanuša", desc: "Bottle 29 € · Glass 6 € · 0,125 l" },
+            { name: "Puhelek Sauvignon Blanc", desc: "Bottle 34 € · Glass 7 € · 0,125 l" },
             { name: "Erdoro Blend One", desc: "Bottle — 33 €" },
-            { name: "Coletti Pinot Grigio", desc: "Bottle 34 € · Glass 7 € · 0,125 l" },
-            { name: "Hvar Hills Pošip", desc: "Bottle 45 € · Glass 8 € · 0,125 l" },
+            { name: "Coletti Pinot Grigio", desc: "Bottle 35 € · Glass 7 € · 0,125 l" },
+            { name: "Hvar Hills Pošip", desc: "Bottle 45 € · Glass 9 € · 0,125 l" },
             { name: "Luka Krajančić Intrada", desc: "Bottle — 48 €" },
-            { name: "Zure Grk", desc: "Bottle — 68 €" },
+            { name: "Zure Grk", desc: "Bottle — 69 €" },
             { name: "Knebu Chardonnay", desc: "Bottle — 75 €" },
         ]
     },
@@ -99,7 +99,7 @@ const wineCategories = [
         layout: "image-right",
         image: "/images/wine/rose-wines.webp",
         items: [
-            { name: "Bire Rosé", desc: "Bottle 36 € · Glass 7 € · 0,125 l" },
+            { name: "Bire Rosé", desc: "Bottle 37 € · Glass 7 € · 0,125 l" },
             { name: "Markus Rosé", desc: "Bottle — 45 €" },
             { name: "Whispering Angel", desc: "Bottle — 65 €" },
         ]
@@ -110,9 +110,9 @@ const wineCategories = [
         layout: "image-left",
         image: "/images/wine/red-wines.webp",
         items: [
-            { name: "Sontacchi Crni Pinot", desc: "Bottle 32 € · Glass 6 € · 0,125 l" },
+            { name: "Sontacchi Crni Pinot", desc: "Bottle 33 € · Glass 6 € · 0,125 l" },
             { name: "Grabovac Merlot", desc: "Bottle 36 € · Glass 7 € · 0,125 l" },
-            { name: "Hvar Hills Plavac Maior Riserva", desc: "Bottle 45 € · Glass 8 € · 0,125 l" },
+            { name: "Hvar Hills Plavac Maior Riserva", desc: "Bottle 46 € · Glass 8 € · 0,125 l" },
             { name: "Galić Crno 9", desc: "Bottle — 54 €" },
             { name: "Bire Plavac Mali", desc: "Bottle — 54 €" },
             { name: "Grabovac Syrah", desc: "Bottle — 65 €" },
@@ -133,7 +133,7 @@ const wineCategories = [
         layout: "image-left",
         image: "/images/wine/einaudi-white.webp",
         items: [
-            { name: "Roero Arneis 2025 \u201cDonna Ida\u201d", desc: "Bottle — 42 €" },
+            { name: "Roero Arneis 2025 \u201cDonna Ida\u201d", desc: "Bottle 42 € · Glass 8 €" },
         ]
     },
     {
@@ -142,7 +142,7 @@ const wineCategories = [
         layout: "image-right",
         image: "/images/wine/einaudi-red.webp",
         items: [
-            { name: "Dogliani 2024 D.O.C.G.", desc: "Bottle — 42 €" },
+            { name: "Dogliani 2024 D.O.C.G.", desc: "Bottle 42 € · Glass 8 €" },
             { name: "Langhe Nebbiolo 2024 D.O.C.", desc: "Bottle — 58 €" },
             { name: "Barolo D.O.C.G. 2021 \u201cLudo\u201d", desc: "Bottle — 110 €" },
         ]
