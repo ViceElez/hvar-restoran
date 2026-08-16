@@ -7,7 +7,7 @@ export default function FooterSection() {
                 <div className={styles.col}>
                     <h4 className={styles.heading}>OPENING HOURS</h4>
                     <p className={styles.text}>Every day</p>
-                    <p className={styles.text}>10:00 — 00:00</p>
+                    <p className={styles.text}>12:00 — 00:00</p>
                     <div className={styles.socials}>
                         <a
                             href="https://www.instagram.com/elysium.hvar/"
